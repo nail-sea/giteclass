@@ -1,0 +1,32 @@
+@import "@/assets/styles/theme.scss";
+.stepper {
+  display: flex;
+  width: 186px;
+  align-items: center;
+  &__minus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  &__text {
+    text-align: center;
+    width: 60px;
+    color: #424242;
+    font-size: $font-default-size;
+    margin: 0 10px;
+  }
+  &__plus {
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,94 @@
+@import './index.scss';
+.jw-detail {
+	flex: 1;
+	&__info {
+		&__tit {
+			flex-direction: row;
+			justify-content: flex-start;
+			&_t1 {
+				display: flex;
+			}
+			&_t2 {
+				// max-width: 120px;
+				text-align: center;
+				padding: 4px 8px;
+			}
+		}
+		&__titlename {
+			height: 88px;
+			&__text {
+				font-size: 36px;
+			}
+			&__item {
+				padding: 2px 8px;
+				&__text {
+					font-size: 24px;
+					color: #ffffff;
+				}
+			}
+		}
+		&__content {
+			&__info {
+				&__t4 {
+					&__text {
+						font-size: 24px;
+						color: $basics-color-font;
+					}
+				}
+			}
+		}
+	}
+	&__img-list {
+		&__item {
+			margin: 12px 0;
+		}
+	}
+	&__describe {
+		&__text {
+			font-size: 32px;
+			line-height: 50px;
+		}
+	}
+}
+.com-detail {
+	&__info {
+		&__content {
+			&__call {
+				&__text {
+					color: #ff693e;
+					font-size: 32px;
+				}
+			}
+			&__bottom{
+				margin-top: 24px;
+			}
+		}
+		&__connectname{
+			margin-top: 24px;
+			&__text {
+				color:#424242;
+			}
+		}
+		&__titlename{
+			&__text {
+				font-size: 36px;
+			}
+		}
+	}
+	&__describe{
+		&_title{
+			&__text{
+				color:#424242;
+			}
+		}
+		&__text{
+			font-size:34px;
+			line-height:50px;
+			color:#686868;
+		}
+	}
+}
+.p-l-10{
+	font-size: 24px;
+	color:#a0a0a0;
+}

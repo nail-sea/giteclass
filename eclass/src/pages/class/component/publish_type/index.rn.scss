@@ -1,0 +1,40 @@
+@import './index.scss';
+.wrap{
+  &__title{
+    &__text{
+      font-size: $font-big-size;
+      color: $title-color-font;
+      font-weight: bold;
+    }
+  }
+  &__view{
+    flex-direction: row;
+    &__text-wrap{
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    &__text, &__active{
+      padding:8px 23px;
+      align-items: center;
+      justify-content:center;
+      text-align-vertical: center;
+    }
+  }
+  &__view-len{
+    flex-direction: row;
+    &__text-wrap{
+      margin-right: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    &__text, &__active{
+      margin-right:0;
+      border-radius: 4px;
+      padding:8px 23px;
+      // height:54px;
+      text-align-vertical:center ;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

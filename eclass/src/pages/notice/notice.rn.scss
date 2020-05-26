@@ -1,0 +1,30 @@
+@import './notice.scss';
+.notice-wrap {
+	flex-direction: row;
+	&__view {
+		justify-content:space-between;
+		padding-bottom: 32px;
+		&__top {
+			flex-direction: row;
+			&__left {
+				&__text {
+					font-size: 32px;
+					color: rgba(0, 0, 0, 0.85);
+				}
+			}
+			&__right {
+				&__text {
+					font-size: 22px;
+					color: rgba(0, 0, 0, 0.25);
+				}
+			}
+		}
+		&__bottom {
+      flex-direction: row;
+			&__text {
+				font-size: 24px;
+				color: rgba(0, 0, 0, 0.25);
+			}
+		}
+	}
+}

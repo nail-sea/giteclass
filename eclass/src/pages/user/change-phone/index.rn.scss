@@ -1,0 +1,23 @@
+@import './index.scss';
+.change-phone{
+  &__tips1{
+    justify-content:center;
+    align-items: center;
+    &__text{
+      font-size: 24px;
+    }
+  }
+  &__phone{
+    justify-content:center;
+    align-items: center;
+    &__text{
+      font-size: 36px;
+    }
+  }
+  &__tips2{
+    &__text{
+      font-size: 24px;
+      color: #A0A0A0;
+    }
+  }
+}

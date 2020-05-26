@@ -1,0 +1,22 @@
+[
+  {
+    "source":"./Picker/time.js",
+    "package":"@tarojs/components-rn",
+    "target": "../components/Picker/time.js"
+  },
+  {
+    "source":"./Picker/date.js",
+    "package":"@tarojs/components-rn",
+    "target": "../components/Picker/date.js"
+  },
+  {
+    "source":"./Image/index.js",
+    "package":"@tarojs/components-rn",
+    "target":"../components/Image/index.js"
+  },
+  {
+    "source":"./ScrollView/index.js",
+    "package":"@tarojs/components-rn",
+    "target":"../components/ScrollView/index.js"
+  }
+]

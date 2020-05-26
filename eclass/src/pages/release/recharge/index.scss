@@ -1,0 +1,137 @@
+@import "@/assets/styles/theme.scss";
+@import "@/assets/styles/mixins.scss";
+.recharge-view {
+  background-color: $default-bg-color;
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $text-color;
+    background-color: $white;
+    margin-bottom: 22px;
+    padding: 40px 0;
+    &__title {
+      font-size: $font-default-size;
+    }
+    &__number {
+      font-size: $font-larger-size;
+    }
+    &__tips {
+      font-size: $font-middle-size;
+      color: $default-color-font;
+    }
+  }
+  &__middle {
+    background: $white;
+    padding: 45px 32px;
+    &__title {
+      // box-shadow: inset 0px -1px 1px -1px #EBEBEB;
+      height: 56px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      &__line {
+        flex: 1;
+        height: 1px;
+        background: #ebebeb;
+      }
+    }
+    &__text {
+      font-weight: 400;
+      padding: 0 20px;
+      background-color: $white;
+      font-size: $font-default-size;
+    }
+    &__view {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 35px;
+      margin-bottom:50px;
+    }
+    &__item-bg {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      font-size: 20px;
+      color: $white;
+      width: 81px;
+      height: 40px;
+      padding-right: 16px;
+      text-align: right;
+      @include eject(background-size, 100% 100%);
+      &__img{
+        position: absolute;
+        left:0;
+        top:0;
+        @include eject(width,100%);
+        @include eject(height,100%);
+      }
+      &__text {
+        position: relative;
+        z-index: 1;
+        font-size: 20px;
+      }
+    }
+    &__item {
+      height: 130px;
+      width: 220px;
+      border-radius: 10px;
+      border: 2px solid #ebebeb;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+      &__text {
+        font-size: $font-big-size;
+      }
+      &__view {
+        font-size: $font-middle-size;
+        &__text-default {
+        }
+        &__text {
+          color: $main-color;
+        }
+      }
+    }
+    &__item-active {
+      height: 130px;
+      width: 220px;
+      border-radius: 8px;
+      border: 2px solid $main-color;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+      &__text {
+        font-size: $font-big-size;
+      }
+      &__view {
+        font-size: $font-middle-size;
+
+        &__text {
+          color: $main-color;
+        }
+      }
+    }
+    &__button {
+      margin: 50px 47px 0 47px;
+      box-shadow: 0 2px 4px rgba(226, 145, 133, 1);
+      @include eject(box-shadow, 0 2px 4px 0 rgba(226, 145, 133, 1));
+      border-radius: 9px;
+    }
+  }
+  &__bottom {
+    margin-top: 20px;
+    padding: 32px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    &__text {
+      font-size: $font-middle-size;
+      color: $default-color-font;
+      margin-top: 10px;
+    }
+  }
+}

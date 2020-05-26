@@ -1,0 +1,51 @@
+@import "@/assets/styles/theme.scss";
+.top-wrap{
+    &__top{
+        padding: 60px 32px 0; 
+        display: flex;
+        flex-direction: column;
+        &__title{
+            font-size:44px;
+            font-weight:500;
+            color:rgba(248,124,106,1);
+            @include eject(line-height, 44px);
+        }
+        &__desc{
+            margin:20px 0 40px 0;
+            font-size:24px;
+            font-weight:400;
+            color:rgba(160,160,160,1);
+            line-height:33px;
+        }
+    }
+    &__bottom{
+        padding: 0 32px 10px;
+        font-size:32px;
+        font-weight:400;
+        color:rgba(66,66,66,1);
+        &__item{
+            display: flex;
+            justify-content: space-between;
+            @include border(bottom, 1px, solid,rgba(0,0,0,0.15));
+            @include eject(line-height,95px);
+            &__view{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                &__text{
+                    margin-left:20px;
+                }
+            }
+            &__text{
+                font-size:32px;
+                font-weight: 400;
+                color:rgba(248,124,106,1);
+            }
+        }
+    
+    }
+    &__button{
+        padding: 0 69px;
+        margin-top:120px;
+    }
+}

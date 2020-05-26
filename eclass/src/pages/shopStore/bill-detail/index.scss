@@ -1,0 +1,60 @@
+@import "@/assets/styles/theme.scss";
+.bill-wrap {
+  background-color: #fff;
+  &__list {
+    padding: 0 28px;
+  }
+
+  &__item {
+    width: 100%;
+    margin-top: 28px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+    @include eject(box-shadow, 0px 0px 24px 0px rgba(0, 0, 0, 0.08));
+    border-radius: 12px;
+    padding: 30px 20px 30px 30px;
+    elevation:1;
+    &__top {
+      font-size: 26px;
+      font-weight: 400;
+      color: rgba(66, 66, 66, 1);
+      @include eject(line-height, 28px);
+      &__id {
+        margin-right: 28px;
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: row;
+      margin-top: 40px;
+      &__view {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      }
+      &__view1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        @include border(right, 1px, solid, #ebebeb);
+      }
+    }
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(160, 160, 160, 1);
+    @include eject(line-height, 24px);
+    margin-bottom: 16px;
+  }
+  &__cont {
+    margin-top: 16px;
+    font-size: 32px;
+    color: rgba(66, 66, 66, 1);
+    @include eject(line-height, 32px);
+  }
+}

@@ -1,0 +1,23 @@
+@import './index.scss';
+.item_home{
+  &__top{
+    &__view{
+      flex-direction: row;
+      &__box{
+        flex: 1;
+        justify-content:space-between;
+      }
+      &__view{
+        flex-direction: row;
+        margin: 0;
+      }
+      &__bottom{
+        flex-direction: row;
+      }
+      &__img-box{
+        width: 180px;
+        justify-content:center;
+      }
+    }
+  }
+}

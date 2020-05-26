@@ -1,0 +1,48 @@
+/**
+ * 动画样式
+ */
+
+@keyframes rightToLeft
+{
+    from {-ms-transform:translateX(1000px);-webkit-transform: translateX(1000px);transform: translateX(1000px); /* 标准语法 */opacity: 0;}
+    to {-ms-transform:translateX(0px);-webkit-transform: translateX(0px);transform: translateX(0px); /* 标准语法 */opacity: 1;}
+}
+@-webkit-keyframes rightToLeft 
+{
+    from {-ms-transform:translateX(1000px);-webkit-transform: translateX(1000px);transform: translateX(1000px);opacity: 0;}
+    to {-ms-transform:translateX(0px);-webkit-transform: translateX(0px);transform: translateX(0px);opacity: 1;}
+}
+
+
+@keyframes bottomToTop
+{
+    from {-ms-transform:translateY(1000px);-webkit-transform: translateY(1000px);transform: translateY(1000px); /* 标准语法 */opacity: 0;}
+    to {-ms-transform:translateY(0px);-webkit-transform: translateY(0px);transform: translateY(0px); /* 标准语法 */opacity: 1;}
+}
+@-webkit-keyframes rightToLeft 
+{
+    from {-ms-transform:translateY(1000px);-webkit-transform: translateY(1000px);transform: translateY(1000px);opacity: 0;}
+    to {-ms-transform:translateY(0px);-webkit-transform: translateY(0px);transform: translateY(0px);opacity: 1;}
+}
+
+@keyframes scaleHeightShow
+{
+    from {-ms-transform:scale(1, 0);-webkit-transform: scale(1, 0);transform: scale(1, 0);transform-origin:50% 0;}
+    to {-ms-transform:scale(1, 1);-webkit-transform: scale(1, 1);transform: scale(1, 1);transform-origin:50% 0;}
+}
+@-webkit-keyframes scaleHeightShow 
+{
+    from {-ms-transform:scale(1, 0);-webkit-transform: scale(1, 0);transform: scale(1, 0);transform-origin:50% 0;}
+    to {-ms-transform:scale(1, 1);-webkit-transform: scale(1, 1);transform: scale(1, 1);transform-origin:50% 0;}
+}
+
+@keyframes scaleHeightEnd
+{
+    from {-ms-transform:scale(1, 1);-webkit-transform: scale(1, 1);transform: scale(1, 1);transform-origin:50% 0;}
+    to {-ms-transform:scale(1, 0);-webkit-transform: scale(1, 0);transform: scale(1, 0);transform-origin:50% 0;}
+}
+@-webkit-keyframes scaleHeightEnd 
+{
+    from {-ms-transform:scale(1, 1);-webkit-transform: scale(1, 1);transform: scale(1, 1);transform-origin:50% 0;}
+    to {-ms-transform:scale(1, 0);-webkit-transform: scale(1, 0);transform: scale(1, 0);transform-origin:50% 0;}
+}

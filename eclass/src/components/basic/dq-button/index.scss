@@ -1,0 +1,46 @@
+@import "@/assets/styles/theme.scss";
+.dq-button{
+    width: 100%;
+    @include eject(border,none);
+    @include eject(color,#fff!important);
+    @include eject(background, $basics-color-font!important);
+    border-radius: 9px;
+    &--disabled{
+        width: 100%;
+        @include eject(border, 1px solid #FFE8DF!important);
+        @include eject(color, $basics-color-font!important);
+        @include eject(background, #FFE8DF!important);
+        border-radius: 9px;
+    }
+    &__btn{
+        width: 100%;
+        @include eject(border, 1px solid $basics-color-font!important);
+        @include eject(color,#fff!important);
+        @include eject(background, $basics-color-font!important);
+        border-radius: 9px;
+        &-mini{
+            font-size: 28px;
+            height: 60px;
+            line-height: 60px;
+            &-border{
+                font-size: 28px;
+                height: 60px;
+                line-height: 60px;
+                @include eject(border, 2px solid $basics-color-font!important);
+                @include eject(background, #fff!important);
+                @include eject(color, $basics-color-font!important);
+            }
+        }
+        &-border{
+            @include eject(border, 2px solid $basics-color-font!important);
+            @include eject(background, #fff!important);
+            @include eject(color, $basics-color-font!important);
+        }
+        &--disabled{
+            @include eject(border, 1px solid #FFE8DF!important);
+            @include eject(background, #FFE8DF!important);
+            @include eject(color, $basics-color-font!important);
+        }
+    }
+}
+

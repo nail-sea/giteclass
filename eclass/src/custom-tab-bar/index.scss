@@ -1,0 +1,77 @@
+@import '@/assets/styles/mixins.scss';
+.tab-bar {
+    @include eject(position, fixed);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 133px;
+    font-size: 20px;
+    background: transparent;
+    // @include eject(transform, translate(-50%, 0));
+    height:156px;
+    @include eject(background-size, 100% 100%);
+    @include eject(background-position, no-repeat);
+    &-image{
+      width:100%;
+      height:133px;
+      position: absolute;
+      bottom:0;
+      left:0;
+    }
+    &-wrap {
+      display: flex;
+      height: 110px;
+      margin-top: 54px;
+      &-item {
+        width:20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        &-icon {
+          width: 68px;
+          height: 68px;
+          z-index:1;
+        }
+        &-count{
+          font-size:24px;
+          position: absolute;
+          top:0;
+          background:#FF5000;
+          color:#fff;
+          margin-left:22px;
+          z-index:2;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width:30px;
+          height:30px;
+          border-radius: 50%;
+          text-align: center;
+        }
+        &-btn {
+         
+          font-size: 20px;
+        }
+      }
+    }
+    .intellect-icon {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      @include eject(transform, translateX(-50%));
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-img{
+        width: 84px;
+        height: 84px;
+      }
+      &-btn{
+        color:#A0A0A0;
+        font-size:20px;
+      }
+    }
+  }
+  

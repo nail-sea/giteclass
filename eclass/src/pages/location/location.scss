@@ -1,0 +1,45 @@
+@import '@/assets/styles/theme.scss';
+.location{
+    &__search{
+        background: #f4f4f4;
+    }
+    &__history{
+        width: 100%;
+        background: #fff;
+        &__title{
+            padding:30px 32px 20px;
+            color: #323232;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__list{
+            margin:0 32px;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            @include border(bottom, 1px, solid, #ccc);
+            &__tags{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 8px 20px;
+                border-radius: 8px;
+                margin-right: 15px;
+                margin-bottom: 30px;
+                background: #F1F1F1;
+                &__text{
+                    color: #A0A0A0; 
+                    font-size: 28px;
+                    &--active{
+                        color: #fff; 
+                    }
+                }
+                &--active{
+                    background: $basics-color-font;
+                }
+            }
+        }
+    }
+}

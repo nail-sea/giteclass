@@ -1,0 +1,48 @@
+// @import './index.scss';
+// @import "@/assets/styles/class.rn.scss";
+@import "@/assets/styles/form.rn.scss";
+
+.businessPartnership {
+    &__content__title{
+        padding-bottom: 10px;
+    }
+}
+.release-recruit{
+    background-color:#fff;
+}
+// .dq-form-container__item__content{
+//     &__top{
+//       flex: 1;
+//       flex-direction: row;
+//       justify-content: space-around;
+//       align-items: center;
+//       padding-left: 5px;
+//     }
+//   }
+//   .dq-form-continer {
+//     padding-left: 0;
+//     &__clause {
+//       font-size: 32px;
+//       color: #686868;
+//       margin-top: 30px;
+//       &__btn {
+//         color: $basics-color-font;
+//       }
+//       &__check {
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+//         margin-top: 6px;
+//       }
+//     }
+//     &__btn {
+//       position: relative;
+//       background: #fff;
+//       z-index: 500;
+//       bottom: 0;
+//       left: 0;
+//       width: 100%;
+//       padding: 20px;
+//       box-shadow: 0 -2px 20px #eee;
+//     }
+//   }  

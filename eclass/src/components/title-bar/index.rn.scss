@@ -1,0 +1,18 @@
+@import './index.scss';
+.title-bar{
+    background: #fff;
+}
+.title-bar-bg{
+    align-items: center;
+    background-color: #fff;
+    &__back{
+        flex-direction: row;
+        &__text{
+            color:#424242;
+            font-size:28px;
+        }
+    }
+    &__text{
+        max-width: 80%;
+    }
+}

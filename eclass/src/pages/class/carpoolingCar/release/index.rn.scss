@@ -1,0 +1,25 @@
+// @import './index.scss';
+// @import "@/assets/styles/class.rn.scss";
+@import "@/assets/styles/form.rn.scss";
+.release-hand{
+  background-color: #fff;
+}
+.passenger__description{
+  max-height:100px;
+  // background:#F00
+}
+.dq-form-continer{
+  &__item{
+    &__content{
+      &__picker{
+        padding-left: 30px;
+        flex: 1;
+        justify-content:center;
+        // align-items: center;
+      }
+    }
+  }
+}
+.form-content-flex-multi{
+  justify-content:space-evenly;
+}

@@ -1,0 +1,63 @@
+@import "./index.scss";
+.detail-container {
+  &__top {
+    &__view {
+      flex-direction: row;
+      &__img-box {
+        width: 180px;
+        height: 130px;
+        border-radius: 9px;
+        overflow: hidden;
+      }
+      &__view {
+        &__top {
+          margin-top: 0;
+          &__text {
+            flex-direction: row;
+            align-items: center;
+            margin-top: 12px;
+          }
+        }
+        &__text {
+          &__text {
+            margin-top: 0;
+          }
+          &__text-last {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    &__bottom {
+      flex: 1;
+      padding-right: 20px;
+    }
+  }
+  &__coupon {
+    &__item {
+      &__text-wrap {
+        flex-direction: row;
+      }
+      &__right {
+        &__btn {
+          justify-content: center;
+          align-items: center;
+          text-align-vertical: center;
+        }
+      }
+    }
+    &__cont {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  &__content {
+    &__title {
+    }
+    &__img {
+      border-radius: 9px;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

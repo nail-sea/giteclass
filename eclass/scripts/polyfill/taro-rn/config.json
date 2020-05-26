@@ -1,0 +1,12 @@
+[
+    {
+        "source":"./api/request/index.js",
+        "package":"@tarojs/taro-rn",
+        "target":"../dist/api/request/index.js"
+    },
+    {
+        "source":"./api/Dialog/index.js",
+        "package":"@tarojs/taro-rn",
+        "target":"../dist/api/Dialog/index.js"
+    }
+]

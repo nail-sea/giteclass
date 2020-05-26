@@ -1,0 +1,12 @@
+[
+  { 
+    "source":"./lib/BoxShadow.js",
+    "package":"react-native-shadow",
+    "target":"../lib/BoxShadow.js"
+  },
+  {
+    "source":"./lib/BorderShadow.js",
+    "package":"react-native-shadow",
+    "target":"../lib/BorderShadow.js"
+  }
+]

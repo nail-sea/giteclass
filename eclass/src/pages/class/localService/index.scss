@@ -1,0 +1,56 @@
+@import "@/assets/styles/form.scss";
+@import "@/assets/styles/theme.scss";
+
+.release-recruit {
+	// padding-bottom: 180px;
+	min-height: 100%;
+}
+.localService {
+	// margin: 0 30px;
+	.dq-form-continer {
+		padding-left: 0;
+		&__btn {
+			position: fixed;
+			background: #fff;
+			z-index: 500;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding: 20px;
+			box-shadow: 0 -2px 20px #eee;
+		}
+		&__clause {
+			font-size: 32px;
+			color: #686868;
+			margin-top: 30px;
+			&__btn {
+				color: $basics-color-font;
+			}
+			&__check {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				margin-top: 6px;
+			}
+		}
+	}
+}
+
+.dq-form-container__item__content__top {
+	display: flex;
+	justify-content: space-between;
+	color: rgba(160, 160, 160, 1);
+	&__view {
+		width: 100%;
+		&__view {
+			display: flex;
+			justify-content: space-between;
+			color: rgba(50, 50, 50, 1);
+			&__text {
+				font-size: 32px;
+				font-weight: 400;
+				color: rgba(248, 124, 106, 1);
+			}
+		}
+	}
+}

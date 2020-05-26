@@ -1,0 +1,131 @@
+@import "./index.scss";
+.main-list__item {
+	background-color: #fff;
+  &-header {
+    flex-direction: row;
+		align-items: center;
+    &__titles {
+			// flex: 1;
+			flex-direction: column;
+			justify-content:space-between;
+			// height:139px;
+			&__label{
+				flex-direction: row;
+				align-items: center;
+			}
+			&__tags{
+				// margin: 0;
+				flex-direction: row;
+				align-items: center;
+			}
+      &__types {
+				margin:0;
+				&__item1{
+					height:34px;
+					flex-direction: row;
+					align-items: center;
+					&__text{
+						font-size: 24px;
+					}
+				}
+				&__item2{
+					height:34px;
+					flex-direction: row;
+					align-items: center;
+					&__text{
+						font-size: 24px;
+					}
+				}
+        &__item3 {
+					height:34px;
+					flex-direction: row;
+					align-items: center;
+          &__text {
+            font-size: 24px;
+            color: #fff;
+          }
+        }
+        &__item4 {
+					height:34px;
+					flex-direction: row;
+					align-items: center;
+          &__text {
+            color: #000;
+            font-size: 24px;
+          }
+				}
+				&__item5{
+					height:34px;
+					flex-direction: row;
+					align-items: center;
+					&__text{
+						font-size: 24px;
+						color:$text-color;
+					}
+				}
+      }
+		}
+		&__call{
+			&__btn{
+				justify-content:center;
+				align-items: center;
+				&__text{
+					font-size:22px;
+					color:#ff693e;
+				}
+			}
+		}
+		&__salary{
+			min-width: 170px;
+			&__text{
+				font-size: 32px;
+				color:$basics-color-font;
+				text-align: right;
+			}
+		}
+	}
+	&-content{
+		&__all{
+			&__text{
+				color:#5e7ed4;
+				font-size: 30px;
+			}
+		}
+		&__word{
+			&__text{
+				font-size: 30px;
+				color:$text-color;
+			}
+		}
+	}
+	&-imglist{
+		&__img{
+			overflow: hidden;
+		}
+		&__mask{
+			justify-content:center;
+			align-items: center;
+			&__text{
+				color:#fff;
+				font-size: 40px;
+				font-weight: bold;
+			}
+		}
+	}
+	&-footer{
+		margin-top:30px;
+		align-items: center;
+		&__header{
+			&__img{
+				flex-direction: row;
+			}
+		}
+		&__name, &__time, &__num, &__num-share{
+			flex-direction: row;
+			&__text{
+				font-size: 26px;
+				color:#A0A0A0;
+			}
+		}
+	}
+}

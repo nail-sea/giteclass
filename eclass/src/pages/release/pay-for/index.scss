@@ -1,0 +1,283 @@
+@import "@/assets/styles/theme.scss";
+.pay-wrap {
+  background: rgba(244, 244, 244, 1);
+  font-size: 28px;
+
+  &__view {
+    &__head {
+      padding: 40px 30px 26px;
+      background: rgb(255, 255, 255);
+      padding-bottom: 100px;
+      &__view {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__top {
+          font-size: 24px;
+          font-weight: 400;
+          color: rgba(160, 160, 160, 1);
+        }
+        &__bottom {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        &__price {
+          font-size: 70px;
+          font-weight: normal;
+          color: rgba(66, 66, 66, 1);
+        }
+       
+        &__name {
+          font-size: 24px;
+          font-weight: 400;
+          color: rgba(160, 160, 160, 1);
+        }
+      }
+    }
+    &__top {
+      padding: 40px 30px 26px;
+      background: rgb(255, 255, 255);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+      @include eject(box-shadow, 0px 2px 4px 0px rgba(0, 0, 0, 0.15));
+      justify-content: center;
+      &__success {
+        width: 270px;
+        height: 270px;
+        margin: 0 auto;
+        display: flex;
+        @include eject(display, block);
+      }
+      &__view {
+        font-size: 36px;
+        font-weight: 400;
+        color: rgba(66, 66, 66, 1);
+        padding-left: 40px;
+        &__price {
+          font-size: 44px;
+          font-weight: 500;
+          color: rgba(248, 124, 106, 1);
+        }
+        &__price-1{
+          text-align: center;
+          display: block;
+          color: rgba(248, 124, 106, 1);
+          &_text{
+            font-size: 20;
+            color: rgba(66, 66, 66, 1);
+            margin-right: 20px;
+            margin-left: -40px
+          }
+          &_moeny{
+            position: relative;
+            top: 0;
+            padding-right: 4px;
+            font-size: 30px;
+            font-size: 44px;
+          }
+          &_txt{
+            font-size: 60px;
+          }
+        }
+        &__tips{
+          font-size:20px;
+          color:#C8C8C8;
+          display: flex;
+        }
+        &__t{
+          margin-left:10px;
+        }
+        &__circle{
+          border:1px solid #C8C8C8;
+          border-radius: 135px;
+          margin-left: 20px;
+          width: 28px;
+          height: 28px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    &__center {
+      padding: 26px 46px 26px 70px;
+      margin-top: 26px;
+      margin-bottom: 20px;
+      background: rgb(255, 255, 255);
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+      @include eject(box-shadow, 0px 2px 4px 0px rgba(0, 0, 0, 0.15));
+      &__view-top {
+        // display: flex;
+        // height:30px;
+        line-height:50px;
+        margin:20px 0;
+        &__text-box {
+          flex: 1;
+          &__title {
+            font-size: 32px;
+            color: rgba(66, 66, 66, 1);
+            margin-right: 20px;
+          }
+          font-size: 28px;
+          color: rgba(160, 160, 160, 1);
+        }
+        &__text-box1 {
+          flex: 1;
+          margin-top:20px;
+          padding-top:20px;
+          @include border(top, 1px, solid, rgba(0, 0, 0, 0.15));
+          &__title {
+            font-size: 32px;
+            color: rgba(66, 66, 66, 1);
+            margin-right: 20px;
+          }
+          // text-align: right;
+          // @include border(left, 1px, solid, rgba(0, 0, 0, 0.15));
+          font-size: 28px;
+          color: rgba(160, 160, 160, 1);
+        }
+      }
+      &__view {
+        margin-top:20px;
+        padding-top:20px;
+        @include border(top, 1px, solid, rgba(0, 0, 0, 0.15));
+        &__title {
+          font-size: 32px;
+          font-weight: 400;
+          color: rgba(66, 66, 66, 1);
+          margin-bottom:10px;
+        }
+        &__text {
+          font-size: 28px;
+          font-weight: 400;
+          color: rgba(160, 160, 160, 1);
+        }
+      }
+    }
+    &__bottom {
+      padding: 26px 46px 60px 70px;
+      background: rgb(255, 255, 255);
+      &__view {
+        &__title {
+          font-size: 32px;
+          font-weight: 400;
+          color: rgba(66, 66, 66, 1);
+          line-height: 32px;
+          margin-bottom: 30px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          &__right {
+            color: #f87c6a;
+          }
+        }
+        &__view {
+          font-size: 28px;
+          font-weight: 400;
+          color: rgba(160, 160, 160, 1);
+          padding: 20px 0;
+          @include border(bottom, 1px, solid, rgba(0, 0, 0, 0.15));
+          &__left {
+            margin-right: 55px;
+          }
+        }
+        &__view-1{
+          display: flex;
+          flex-direction: row;
+          justify-content:space-between;
+        }
+        &__pay {
+          line-height: 95px;
+          &__view {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include border(bottom, 1px, solid, rgba(0, 0, 0, 0.15));
+            &__view-box {
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              &__text {
+                font-size: 32px;
+                font-weight: 400;
+              }
+              &__img {
+                margin-right: 20px;
+                width: 48px;
+                height: 48px;
+                @include eject(vertical-align, middle);
+              }
+            }
+          }
+        }
+      }
+      &__button {
+        margin-top: 39px;
+      }
+      &__button1{
+        margin-top:120px
+      }
+    }
+    &-more{
+      display: flex;
+      flex-direction: row;
+      margin: 20px 0;
+      &-text{
+        color: rgba(160, 160, 160, 1)
+      }
+    }
+  }
+}
+
+.money-wrap{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:30px;
+  &__top{
+    text-align: center;
+    font-size:36px;
+    color:#424242;
+    margin-bottom:50px;
+  }
+  &__center{
+    @include border(bottom,1px, solid, rgba(0,0,0,.08));
+    padding-bottom:29px;
+    margin-bottom:30px;
+    &__view{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &__t1{
+        font-size:28px;
+        color:#F87C6A;
+      }
+      &__t2{
+        margin-top:-10px;
+        font-size:20px;
+        text-decoration: line-through;
+        color:rgba(216,216,216,1);
+      }
+    }
+    &__flex{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__bottom{
+    &__view{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    &__money{
+      color:#F87C6A;
+      font-size:32px;
+    }
+    &__tips{
+      color:#C8C8C8;
+      font-size:20px;
+      margin-top:40px;
+    }
+  }
+}

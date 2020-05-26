@@ -1,0 +1,25 @@
+@import "@/assets/styles/form.scss";
+@import "@/assets/styles/theme.scss";
+.dq-form-container__item__content__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dq-form-continer__clause {
+  margin-top: 20px;
+  &__check {
+    display: flex;
+    margin-top: 20px;
+    &__view {
+      display: flex;
+      align-items: center;
+      &__txt {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.txt {
+  color: rgba(160, 160, 160, 1);
+}

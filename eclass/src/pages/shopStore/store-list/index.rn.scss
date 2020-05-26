@@ -1,0 +1,13 @@
+@import './index.scss';
+.shopstore{
+    align-items:center;
+    padding:32px 0;
+    &__top{
+        align-self:flex-start;
+        padding-left:32px;
+    }
+    &__item{
+        width:686px;
+        elevation:1;
+    }
+}

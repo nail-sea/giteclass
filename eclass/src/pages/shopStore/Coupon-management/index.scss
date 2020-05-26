@@ -1,0 +1,19 @@
+@import "../../user/card-center/index.scss";
+.CARD_CENTER {
+  &__tips{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__publish {
+      padding: 0 16px;
+      height: 44px;
+      background: rgba(255, 232, 223, 1);
+      border-radius: 8px;
+      font-size: 22px;
+      color: rgba(255, 105, 62, 1);
+      line-height: 44px;
+      // margin-left: 30px;
+    }
+  }
+}
+

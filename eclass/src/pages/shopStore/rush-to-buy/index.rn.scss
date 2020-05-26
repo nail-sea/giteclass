@@ -1,0 +1,23 @@
+@import './index.scss';
+.buy-container{
+  min-height: 100%;
+  background-color:#fff;
+  &__top{
+    elevation:5;
+    &__view{
+      flex-direction: row;
+      &__img-box {
+        width:180px;
+        height:130px;
+        border-radius: 9px;
+        overflow: hidden;
+      }
+      &__box{
+        justify-content:space-around;
+      }
+      &__cont{
+        flex-direction: row;
+      }
+    }
+  }
+}

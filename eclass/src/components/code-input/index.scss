@@ -1,0 +1,96 @@
+@import "@/assets/styles/theme.scss";
+.code-input{
+    width:100%;
+    &__con{
+        &__word2{
+            font-size: 44px;
+            color: $basics-color-font;
+            padding:60px 70px 30px;
+        }
+        &__word3{
+            font-size: 32px;
+            color: #A0A0A0;
+            padding:0 0 70px 70px;
+            &__phone{
+                color: #424242;
+            }
+        }
+        &__code{
+            width: 200px;
+            text-align: center;
+            font-size:32px;
+            height: 60px;
+            line-height: 60px;
+            margin: 130px auto 0;
+            color: $basics-color-font;
+            &__get-again{
+                background: #FFE8DF;
+                width: 100%;
+                height: 100%;
+                border-radius: 9px;
+            }
+            &__time{
+                width: 100%;
+                height: 100%;
+                background: #F1F1F1;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                border-radius: 9px;
+            }
+        }
+        &__code-input{
+            width: 80%;
+            margin:0 auto;
+            position: relative;
+            height: 90px;
+            overflow: hidden;
+            &__show{
+                font-size: 60px;   
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+                &__text-wrap{
+                    display: flex;
+                    flex-direction: column;
+                    flex:1;
+                    margin: 0 15px;
+                    height: 90px;
+                    justify-content: flex-start;
+                    align-items: center;
+                    @include border(bottom, 5px ,solid, #dbdbdb);
+                    @include eject(line-height,1);
+                    &--current{
+                        @include border(bottom, 5px ,solid, $basics-color-font);
+                    }
+
+                }
+                &__text{
+                    // flex: 1;
+                    text-align: center;
+                    // line-height: 90px;
+                }          
+            }
+            &__input{
+                position: absolute;
+                width: 160%;
+                height: 100%;
+                z-index: 100;
+                top:0;
+                left:-30%;
+                opacity: 0;
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+

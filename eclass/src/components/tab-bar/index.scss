@@ -1,0 +1,58 @@
+@import "@/assets/styles/theme.scss";
+.tab-bar-default{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    height:79px;
+    &__item{
+        color: #999;
+        font-size: 28px;
+        text-align: center;
+        width: 120px;
+        @include eject(transition, width 0.3s);
+        padding:19px 0;
+    }
+    &__item--active{
+        color: #424242;
+        position: relative;
+    }
+    &__item__border--active{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 28px;
+        height:10px;
+        margin-left: -14px;
+        border-radius: 5px;
+        background: $basics-color-font;
+    }
+    &--fixed{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        width: 100%;
+        background: #fff;
+        // position: absolute;
+        // @include eject(position, fixed);
+        top:0;
+        // left:50%;
+        // z-index: 20;
+        max-width: 750px;
+        // @include eject(transform, translate(-50%, 0));
+        // @include border(bottom, 1px, solid, #eee);
+        .tab-bar-default__item{
+            color: #999;
+            font-size: 28px;
+            text-align: center;
+            width: 25%;
+            @include eject(transition ,width .3s);
+            padding:20px 0;
+            font-weight: bold;
+        }
+        .tab-bar-default__item--active{
+            color: $basics-color-font;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+/**
+ * 统一多端基础样式
+ * 比较理想的是 View 标签统一为 display: flex; flex-direction: column
+ * 但是 H5 上内置组件样式可能会错乱，因此暂时不这样处理，有用到 flex 的地方都显式声明主轴方向即可
+ */
+
+/* weapp */
+@import "./theme.scss";
+
+page {
+  height: 100%;
+  color: $text-color;
+}
+
+view,
+text,
+scroll-view {
+  box-sizing: border-box;
+}
+
+button {
+  &:after {
+    display: none;
+  }
+}
+
+/* h5 */
+/*postcss-pxtransform rn eject enable*/
+html, body {
+  height: 100%;
+}
+#app {
+  height: 100%;
+}
+body{
+  color: $text-color;
+  max-width: 750px;
+  margin: 0 auto;
+}
+div {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+}
+
+.taro-text {
+  box-sizing: border-box;
+}
+
+.taro-tabbar__panel,
+.taro_router {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100%;
+  background: #fff;
+}
+.taro_page {
+  flex: 1;
+  height: auto;
+  min-height: 100%;
+  background: #fff;
+}
+.taro__modal{
+  transition: opacity 0s linear 0s!important;
+}
+
+.taro-scroll {
+  @include eject(-webkit-overflow-scrolling, touch);
+}
+
+/*postcss-pxtransform rn eject disable*/
+
+.flex{display: flex;flex-direction:row;}
+.flex_1{flex: 1;}
+.flex_2{flex: 2;}
+.flex_3{flex: 3;}
+.flex_4{flex: 4;}
+.flex_5{flex: 5;}
+.flex_6{flex: 6;}
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+.list__bottom__loading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  &-txt {
+    font-size: 24px;
+  }
+}

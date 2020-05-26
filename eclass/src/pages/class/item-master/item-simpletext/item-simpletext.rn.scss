@@ -1,0 +1,22 @@
+@import './item-simpletext.scss';
+.simpletext-list__item {
+	&__title {
+		&__text {
+			font-size: 32px;
+			color: $basics-color-font;
+		}
+	}
+	&__content {
+		&__text {
+			font-size: 28px;
+			color: #333;
+			line-height: 44px;
+		}
+	}
+	&__position {
+		&__text {
+			color: #a0a0a0;
+			font-size: 24px;
+		}
+	}
+}

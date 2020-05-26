@@ -1,0 +1,11 @@
+@import './index.scss';
+.share-wrap__code{
+  flex: 1;
+  background-color:#f00;
+  &__bg{
+    flex: 1;
+    &__view{
+      height: 782px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "@/assets/styles/theme.scss";
+.login-register-code{
+    width: 100%;
+    padding:18px 70px 0;
+    &__input{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 32px;
+        padding:10px 0;
+        @include border(bottom, 2px, solid, #e9e9e9);
+        &__code{
+            min-width: 120px;
+            text-align: right;
+            &__get{
+                color: $basics-color-font;
+            }
+            &__get-again{
+                color: #A0A0A0;
+                border-radius: 9px;
+            }
+            &__time{
+                color: $basics-color-font;
+                background: #F1F1F1;
+                padding:6px 10px;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                border-radius: 9px;
+            }
+        }
+    }
+    &__tips{
+        font-size:24px;
+        padding-top: 10px;
+        color: #A0A0A0;
+        display: flex;
+    }
+    &__tips--error{
+        font-size:24px;
+        padding-top: 10px;
+        color: red;
+        display: flex;
+    }
+}
+
+
+
+

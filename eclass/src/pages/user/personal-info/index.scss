@@ -1,0 +1,22 @@
+@import '@/assets/styles/theme.scss';
+.acc-mana{
+    width: 100%;
+    min-height: 100%;
+    background: #F4F4F4;
+    .bg-con{
+        background: #fff;
+        padding:0 32px;
+    }
+    &__picker-text{
+        color: #A0A0A0;
+        font-size: 28px;
+        width: 500px;
+        text-align: right;
+    }
+    .user-item__img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: block;
+    }
+}

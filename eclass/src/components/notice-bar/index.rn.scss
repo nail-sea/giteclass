@@ -1,0 +1,27 @@
+@import "./index.scss";
+.notice-bar {
+  min-height: 60px;
+  align-items: center;
+  &__img {
+    display: flex;
+  }
+  &__continer {
+    overflow: hidden;
+    flex: 1;
+    background:transparent;
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+    width:200%;
+  }
+  &__item {
+    margin-right: 20px;
+    font-size: 24px;
+    &__text{
+        color: #333;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "./index.scss";
+.dq-button {
+	// height:92px;
+	background: $basics-color-font;
+	justify-content: center;
+	&--disabled {
+		// height:92px;
+		border: 1px solid #ffe8df;
+		background: #ffe8df;
+		justify-content: center;
+	}
+	&__btn {
+		padding: 24px 12px;
+		background: transparent;
+		&-border {
+			padding: 24px 12px;
+			border: 2px solid $basics-color-font;
+			background: #fff;
+			&--disabled {
+				padding: 24px 12px;
+				background: #fff;
+				border: 2px solid $basics-color-font;
+				&__text {
+					color: $basics-color-font;
+					font-size: 36px;
+				}
+			}
+			&__text {
+				color: $basics-color-font;
+				font-size: 36px;
+			}
+		}
+		&--disabled {
+			padding: 24px 12px;
+			background: transparent;
+			&__text {
+				color: $basics-color-font;
+				font-size: 36px;
+			}
+		}
+		&__text {
+			color: #fff;
+			font-size: 36px;
+		}
+	}
+}

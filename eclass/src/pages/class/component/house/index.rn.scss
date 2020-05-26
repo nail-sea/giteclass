@@ -1,0 +1,27 @@
+@import "./index.scss";
+@import "@/assets/styles/form.rn.scss";
+.dq-form-continer {
+  &__item{
+    &-view {
+      &__content-flex {
+        flex-direction: row;
+        &__text {
+          flex: 1;
+          flex-direction: row;
+          align-items: center;
+          &-txt{
+            font-size: 32px;
+            color:#424242;
+          }
+        }
+      }
+    }
+    &__content{
+      &-flex{
+        &__text{
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}

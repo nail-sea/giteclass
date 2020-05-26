@@ -1,0 +1,48 @@
+@import './item-house.scss';
+.house-list__item {
+  height: 250px;
+  &-flex{
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+  }
+  &-header{
+    align-items: flex-start;
+    // flex: 1;
+    height: 100%;
+    justify-content: space-between;
+    &__types{
+      &__item1{
+        padding: 0 8px;
+        justify-content:center;
+        align-items: center;
+        &__text{
+          font-size: 24px;
+          color:#fff;
+        }
+      }
+      &__item2{
+        justify-content:center;
+        align-items: center;
+        &__text{
+          font-size: 24px;
+          color:#fff;
+        }
+      }
+    }
+    &__name{
+      &__text{
+        font-size: 28px;
+        color:#424242;
+      }
+    }
+  }
+  &-content{
+    width:100%;
+    flex-direction: row;
+    margin:0;
+  }
+  &-imglist{
+    align-items: center;
+  }
+}

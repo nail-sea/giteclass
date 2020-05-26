@@ -1,0 +1,16 @@
+@import './home.scss';
+.home{
+    flex: 1;
+    &__main-list{
+        z-index: 0;
+    }
+    &__bottom-polyfill{
+        position: absolute;
+        left:0;
+        right: 0;
+        bottom: 0;
+        height:50%;
+        background-color:#fff;
+        z-index: -1;
+    }
+}

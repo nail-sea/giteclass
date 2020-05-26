@@ -1,0 +1,74 @@
+@import './index.scss';
+.cascader {
+	// flex: 1;
+	&__title {
+		&__text {
+			color: #323232;
+			font-size: 36px;
+		}
+	}
+}
+.cascader-tag {
+	flex-direction: row;
+	display: flex;
+	position: relative;
+	&--fixed {
+		position: relative;
+		flex-direction: row;
+	}
+	&__item {
+		// flex-direction: row;
+		flex: 1;
+		align-items: center;
+		&__text {
+			color: #999;
+			font-size: 28px;
+		}
+	}
+	&__item--active {
+		&__text {
+			color: #424242;
+		}
+	}
+}
+.cascader-default__item {
+	color: #999;
+	font-size: 30px;
+	text-align: center;
+	width: 25%;
+	@include eject(transition, width 0.3s);
+	padding: 20px 0;
+	font-weight: bold;
+}
+.cascader-default__item--active {
+	color: #3cb5f6;
+	border-bottom-width: 2px;
+	border-bottom-color: #3cb5f6;
+}
+.cascader-panel {
+	// margin-top: 125px;
+	// top:200px;
+	// flex: 1;
+	position: relative;
+	// height: 100%;
+	&__item {
+		flex-direction: row;
+		align-items: center;
+		&__text {
+			display: flex;
+			&__text {
+				color: #424242;
+				font-size: 28px;
+				font-weight: 200;
+			}
+		}
+		&__text--active {
+			display: flex;
+			&__text {
+				color: #f87c6a;
+				font-size: 28px;
+				font-weight: 200;
+			}
+		}
+	}
+}

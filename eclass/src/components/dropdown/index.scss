@@ -1,0 +1,118 @@
+@import '@/assets/styles/theme.scss';
+.dropdown {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	@include eject(box-sizing,border-box );
+	&__container {
+		width: 100%;
+	}
+	&__bar {
+		flex-direction: row;
+		height: 122px;
+		width: 100%;
+		padding: 0 20px;
+		@include eject(border-style, solid);
+		border-width: 0;
+		border-top-width: 1px;
+		border-top-color: #ebdbdb;
+		border-bottom-width: 1px;
+		border-bottom-color: #ebdbdb;
+		background-color: #fff;
+		&__item {
+			flex: 1;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			&__text {
+				@include lamp-clamp(1);
+				@include eject(word-wrap, break-word);
+				color: #747474;
+				font-size: 28px;
+				max-width: 80%;
+			}
+		}
+	}
+	&__panel {
+		// width: 100%;
+		background-color: #fff;
+		&__tag {
+			padding: 32px;
+			&__row {
+				padding: 18px 0;
+				flex-direction: row;
+			}
+			&__col {
+				flex: 1;
+				justify-content: center;
+				align-items: center;
+				// border:1px solid #ebebeb;
+			}
+		}
+		&--list {
+			align-items: stretch;
+		}
+		&__item {
+			&--tag {
+				width: 144px;
+				height:54px;
+				justify-content: center;
+				align-items: center;
+				border-radius: 4px;
+				background-color: #f2f2f2;
+			}
+			&--list {
+				padding: 34px 20px;
+				width: 100%;
+				height: 100px;
+				@include border(bottom,1px ,solid ,#ebebeb );
+				flex-direction: row;
+				align-items: center;
+			}
+			&__text {
+				font-size: 28px;
+				color: #747474;
+			}
+		}
+		&__btns {
+			padding: 0 32px;
+			height: 110px;
+			background-color: #fff;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			@include border(top,1px,solid,#ebebeb);
+			&__btn {
+				height: 72px;
+				border-radius: 9px;
+				justify-content: center;
+				align-items: center;
+				&--cancel {
+					width: 243px;
+					border: 2px solid #f87c6a;
+				}
+				&--confirm {
+					width: 401px;
+					background-color: #f87c6a;
+				}
+				&__text {
+					font-size: 30px;
+					&--cancel {
+						color: #f87c6a;
+					}
+					&--confirm {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	&__mask {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 10000;
+		background-color: rgba(0, 0, 0, .4);
+	}
+}

@@ -1,0 +1,11 @@
+@import './index.scss';
+.share-wrap{
+    &__view{
+        &__title{
+            margin-top:140px;
+        }
+        &__link{
+            margin-top:0;
+        }
+    }
+}

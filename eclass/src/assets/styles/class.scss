@@ -1,0 +1,48 @@
+
+@import "@/assets/styles/theme.scss";
+.class-modal{
+    background: #F4F4F4;
+    height: 100%;
+    &__wrap{
+        @include eject(-webkit-overflow-scrolling, touch);
+    }
+    &__banner{
+        width: 92%;
+        margin:0 auto;
+        border-radius:12px;
+        overflow: hidden;
+    }
+    &__notice{
+        width: 94%;
+        margin-left:1.3%;
+    }
+    &__main-list{
+        width: 100%;
+        background: #ffffff;
+    }
+    &__tabBar-class{
+        @include border(bottom, 1px, solid, #eee);
+    }
+}
+//列表底部加载
+.list__bottom__loading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    &-txt {
+        font-size: 24px;
+    }
+}
+//招聘求职悬浮按钮
+.fixed_jh_btn{
+    position: absolute;
+    right: 22px;
+    bottom: 220px;
+    z-index: 100;
+    &__img{
+        width: 114px;
+        height: 106px;
+    }
+}

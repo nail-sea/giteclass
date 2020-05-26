@@ -1,0 +1,15 @@
+@import "@/assets/styles/form.scss";
+@import "@/assets/styles/theme.scss";
+
+.dq-form-continer {
+  &__item {
+    &__label-wide {
+      width: auto;
+      padding-right: 20px;
+    }
+    &__error {
+      font-size: $font-middle-size;
+      color: $main-color;
+    }
+  }
+}

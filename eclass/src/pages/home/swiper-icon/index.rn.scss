@@ -1,0 +1,15 @@
+@import './index.scss';
+.home-icon-list{
+    margin:0;
+    height:320px;
+    &__swiper{
+        height:320px;
+        padding-bottom: 0;
+        &-item{
+            &__icon{
+                // width:102px;
+                // height:102px;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import './index.scss';
+@import "@/assets/styles/login-register.rn.scss";
+.login-register{
+  &__find-pass-user{
+    justify-content:center;
+    align-items: flex-end;
+    &__text{
+      font-size: 28px;
+    }
+  }
+}

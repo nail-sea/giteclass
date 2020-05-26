@@ -1,0 +1,70 @@
+
+@import '@/assets/styles/mixins.scss';
+.tab-bar{
+    @include eject(position, fixed);
+    bottom:0px;
+    left:50%;
+    z-index:50;
+    width: 100%;
+    max-width: 750px;
+    @include eject(transform, translate(-50%, 0));
+    height:156px;
+    @include eject(background-size, 100% 100%);
+    @include eject(background-position, no-repeat);
+    &__view{
+        display: flex;
+        height:100%;
+        &__view{
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            &__message{ 
+                position: relative;
+                margin-top:62px;
+                height:60px;
+                &__box{ 
+                   position: relative;
+                    &__num{
+                        position: absolute;
+                        left:76px;
+                        top:0px;
+                        background:rgba(255,80,0,1);
+                        font-size:20px;
+                        font-family:ArialMT;
+                        color:rgba(255,255,255,1);
+                        line-height:20px;
+                        border-radius:18px;
+                        padding:6px 8px;
+                        z-index:1;
+                    }
+                }   
+            }
+            &__main{
+                width:68px;
+                height:68px;
+            }
+            &__main-img{
+                position: absolute;
+                left:33px;
+                top:-24px;
+                width:84px;
+                height:84px;
+            }
+            &__box{
+                font-size:20px;
+                font-weight:400;
+                color:rgba(160,160,160,1);
+                line-height:28px;
+                &__text{
+                    text-align: center;
+                }
+                &__text{
+                    text-align: center;
+                    color:rgb(251, 83, 69);
+                }
+            }
+        }
+    }
+   
+}

@@ -1,0 +1,33 @@
+@import "@/assets/styles/reset.scss";
+.CARD_CENTER {
+  height: 100%;
+  &__header {
+    width: 100%;
+    background: #fff;
+    @include border(bottom, 2px, solid, #ebebeb);
+  }
+  &__tips{
+    padding: 16px 32px 20px;
+    &__text{
+      font-size: 24px;
+      color: #A0A0A0;
+      display: flex;
+    }
+  }
+  &__btn {
+    width: 100%;
+    padding: 120px 32px 0;
+  }
+  &__list-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 18px;
+    &__item {
+      width: 202px;
+      height: 60px;
+      font-size: 28px;
+      margin-left: 30px;
+    }
+  }
+}

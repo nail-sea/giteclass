@@ -1,0 +1,23 @@
+@import '@/assets/styles/mixins.scss';
+.login-notice-wrap {
+	font-size: 28px;
+	font-weight: 400;
+	color: rgba(66, 66, 66, 1);
+	line-height: 52px;
+	background-color: #fff;
+	// height: 100%;
+	&__view {
+		padding: 30px 32px 30px;
+		&__text {
+			line-height: 52px;
+			font-weight: 400;
+			margin-top: 10px;
+			@include eject(display, block);
+			color: rgba(66, 66, 66, 1);
+			font-size: 28px;
+			&-center{
+				text-align: center;
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+@import './index.scss';
+.release-management{
+    flex: 1;
+    &__header{
+        position: absolute;
+    }
+    &__wrap{
+        flex: 1;
+    }
+}

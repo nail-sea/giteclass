@@ -1,0 +1,28 @@
+.DqScrollView{
+	height: 100%;
+	width: 100%; 
+	position: relative;
+	overflow: hidden;
+	&__downDragBox{
+		width: 100%;
+		top: 0px;
+		display: flex;
+		overflow: hidden;
+		justify-content: center;
+		align-items: center;
+		font-size: 30px;
+    position: absolute;
+    &__downText{margin-left: 20px;}
+	}
+	&__container{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+  }
+  &__loadmore{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}

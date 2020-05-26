@@ -1,0 +1,39 @@
+@import './index.scss';
+.dq-picker{
+	flex: 1;
+}
+.dq-picker__show-sel {
+	flex-direction: row;
+	justify-content:space-between;
+	align-items: center;
+	height:105px;
+	background-color: transparent;
+	&__label{
+		flex-direction: row;
+		align-items: center;
+		&__text{
+			color:	$text-color-light;
+			font-size:$font-middle-size;
+		}
+	}
+
+}
+.dq-picker__continer {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #fff;
+}
+.dq-picker__show-sel_title-count {
+	align-items: flex-start;
+}
+.dq-picker__show-sel_title-bar__back {
+	flex-direction: row;
+	align-items: center;
+	&__text{
+		font-size: 28px;
+		color: #fff;
+	}
+}

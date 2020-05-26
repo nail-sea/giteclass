@@ -1,0 +1,13 @@
+@import './index.scss';
+.dq-textarea__input{
+  text-align-vertical: top;
+  &-style1, &-style2{
+    text-align-vertical: top;
+  }
+}
+.dq-textarea__input{
+  padding:0;
+  &-style1, &-style2{
+    padding: 0;
+  }
+}

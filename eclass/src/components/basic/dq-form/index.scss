@@ -1,0 +1,422 @@
+@import "@/assets/styles/theme.scss";
+
+.dq-form {
+	
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	@include eject(-webkit-overflow-scrolling,auto !important);
+	@include eject(box-sizing, border-box);
+	&-wrap {
+		// flex: 1;
+	}
+	&-container {
+		padding-bottom: 92px;
+		width: 100%;
+		// flex: 1;
+		@include eject(max-height, 100%);
+		align-items: center;
+	}
+	&-footer {
+		align-items: center;
+	}
+	&__image-picker {
+		&__header {
+			flex-direction: row;
+			align-items: center;
+			padding-bottom: 16px;
+			&__label {
+				font-size: $font-big-size;
+				color: $label-color-font;
+			}
+			&__describe {
+				margin-left: 32px;
+				font-size: $font-big-size;
+				color: $default-color-font;
+			}
+		}
+		&__content {
+			flex-direction: row;
+			flex-wrap: wrap;
+			&__item {
+				margin-bottom: 10px;
+				margin-right: 8px;
+				width: 220px;
+				height: 220px;
+				border-radius: 9px;
+				overflow: hidden;
+				background-color: #eee;
+				align-items: center;
+				justify-content: center;
+				&--camera {
+					background-color: #d8d9e0;
+				}
+				&__img {
+					width: 100%;
+					height: 100%;
+				}
+				&__delete {
+					position: absolute;
+					top: 10px;
+					right: 10px;
+					z-index: 1;
+					width: 40px;
+					height: 40px;
+					&__img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+	&__input {
+		padding: 0;
+		padding-right: 40px;
+		font-size: $font-big-size;
+		color: $text-color;
+		flex: 1;
+		&--align-left {
+			text-align: left;
+		}
+		&--align-right {
+			text-align: right;
+		}
+		&-container {
+			flex: 1;
+			flex-direction: row;
+			align-items: center;
+		}
+		&__text {
+			font-size: $font-big-size;
+			color: $text-color;
+		}
+		&__content {
+			justify-content: center;
+			flex: 1;
+		}
+		&__clear {
+			position: absolute;
+			right: 0;
+		}
+	}
+	&__item {
+		padding: 0 32px;
+		width: 100%;
+		background-color: #fff;
+		&--default {
+			height: 100px;
+		}
+		&--double {
+			height: 200px;
+		}
+		&--textarea {
+			height: 217px;
+		}
+
+		&__wrap {
+			@include border(bottom, 2px, solid, #ebebeb);
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			min-height: 100px;
+
+			&--textarea,
+			&--double {
+				align-items: flex-start;
+				padding: 32px 0;
+				flex-wrap: wrap;
+			}
+			&--image {
+				padding: 32px 0;
+			}
+		}
+		&__label {
+			width: 130px;
+			@include eject(text-align-last, justify);
+			margin-right: 32px;
+			display: flex;
+			flex-direction: row;
+			&--2 {
+				width: 94px;
+			}
+			&--3 {
+				width: 126px;
+			}
+			&--4 {
+				width: 160px;
+				// @include eject(text-align-last, justify);
+			}
+			&--5 {
+				width: 192px;
+			}
+			&--6 {
+				width: 224px;
+			}
+			&--7 {
+				width: 256px;
+			}
+			&--double {
+				width: 100%;
+				@include eject(text-align-last, left);
+			}
+			&__text {
+				font-size: $font-big-size;
+				color: $label-color-font;
+			}
+			&__required {
+				font-size: $font-larger-size;
+				height: 56px;
+				margin-left: 10px;
+				color: #F87C6A;
+			}
+		}
+		&__content {
+			flex: 1;
+			justify-content: center;
+			@include eject(height, 100%);
+			&--row {
+				flex-direction: row;
+				align-items: center;
+			}
+		}
+		&__extra {
+			max-width: 100px;
+			min-width: 50px;
+			justify-content: center;
+			align-items: flex-end;
+			&__text {
+				font-size: $font-big-size;
+				color: $label-color-font;
+			}
+		}
+		&__arrow {
+			width: 50px;
+			height: 100%;
+			justify-content: center;
+			align-items: flex-end;
+			left: 12px;
+			&__wrap {
+				&--top {
+					transform: rotate(-90deg);
+				}
+				&--bottom {
+					transform: rotate(90deg);
+				}
+			}
+		}
+	}
+	&__picker {
+		flex: 1;
+		justify-content: center;
+		&__content {
+			// flex: 1;
+			justify-content: center;
+			align-items: flex-end;
+			&__text {
+				font-size: $font-big-size;
+				color: $text-color;
+				&--default {
+					color: $default-color-font;
+				}
+			}
+		}
+	}
+	&__radio {
+		// display: none;
+		&__group {
+			height: 100%;
+			flex: 1;
+			flex-direction: row;
+			align-items: center;
+		}
+		&__container {
+			margin-right: 20px;
+			height: 100%;
+			flex-direction: row;
+			align-items: center;
+			flex: 1;
+			&--input {
+				margin-right: 0;
+			}
+		}
+		&__label {
+			padding-left: 12px;
+			min-width: 94px;
+			font-size: $font-big-size;
+			color: $text-color;
+			flex: 1;
+		}
+		&__line {
+			margin: 0 24px;
+			width: 1px;
+			height: 30px;
+			background-color: rgba(0, 0, 0, 0.08);
+		}
+	}
+	&__stepper {
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-end;
+		align-self: flex-end;
+		&__button {
+			width: 50px;
+			height: 50px;
+			justify-content: center;
+			align-items: center;
+			@include eject(user-select, none);
+			&--active {
+				opacity: 0.4;
+			}
+			&__text {
+				font-size: 50px;
+			}
+		}
+		&__content {
+			padding: 0 24px;
+			justify-content: center;
+			flex-direction: row;
+			align-items: center;
+			&__text {
+				@include eject(width, 60px);
+				font-size: $font-default-size;
+				color: $text-color;
+				text-align: center;
+			}
+		}
+	}
+	&__tag-picker {
+		flex: 1;
+		&__mask {
+			@include eject(position, fixed);
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 10000;
+			background: #fff;
+			&__nav {
+				padding: 0 24px;
+				width: 100%;
+				background-color: $white;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+				&__left {
+					height: 68px;
+					width: 100px;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+				}
+				&__text {
+					// height: 68px;
+					font-size: $font-big-size;
+					color: $text-color-default;
+				}
+			}
+			&__title {
+				padding-left: 15px;
+				width: 100%;
+				height: 56px;
+				background-color: #f4f4f4;
+				flex-direction: row;
+				align-items: center;
+				&__text {
+					text-align-vertical: center;
+					font-size: 26px;
+					color: $text-color;
+					flex-direction: row;
+				}
+				&__active {
+					color: $main-color;
+				}
+			}
+			&__content {
+				flex-direction: row;
+				flex-wrap: wrap;
+				padding: 12px;
+				&__tag {
+					margin: 15px 10px 10px;
+					padding: 0 18px;
+					height: 54px;
+					background: #f1f1f1;
+					border-radius: 8px;
+					justify-content: center;
+					&--active {
+						background-color: $main-color;
+					}
+					&__text {
+						font-size: 22px;
+						font-weight: 200;
+						color: $default-color-font;
+						&--active {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+		&__content {
+			flex: 1;
+			justify-content: center;
+			flex-wrap: wrap;
+			align-items: flex-end;
+			&__text {
+				font-size: $font-big-size;
+				color: $text-color;
+				&--default {
+					color: $default-color-font;
+				}
+			}
+		}
+	}
+	&__textarea {
+		padding: 0;
+		width: 100%;
+		height: 153px;
+		@include eject(outline, none);
+		border: 0;
+		font-size: $font-big-size;
+		color: $text-color;
+		text-align-vertical: top;
+		@include eject(resize, none);
+		&-container {
+			flex: 1;
+			height: 100%;
+		}
+		&__content {
+			flex: 1;
+		}
+		&__clear {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			z-index: 20;
+		}
+	}
+	&__button {
+		// position: absolute;
+		@include eject(position, fixed);
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 100;
+		padding: 0 32px 32px;
+		background-color: #fff;
+		// align-items: center;
+	}
+	&__with {
+		width: 100%;
+		height: 100%;
+		flex-direction: row;
+		align-items: center;
+		&__dividing {
+			// margin-left:49px;
+			margin-right: 49px;
+			width: 1px;
+			height: 26px;
+			background-color: #ebebeb;
+		}
+	}
+}

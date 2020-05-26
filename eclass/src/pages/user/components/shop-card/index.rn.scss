@@ -1,0 +1,25 @@
+@import './index.scss';
+.shop-card{
+  &__content{
+    bottom:0;
+    right:0;
+    &__top{
+      flex: 1;
+    }
+    &__title{
+      flex: 1;
+      &__text1{
+        margin-top:5px;
+      }
+    }
+    &__pirce{
+      flex-direction: row;
+      align-items: center;
+    }
+    &__bottom{
+      flex:1;
+      &__view{
+      }
+  }
+  }
+}

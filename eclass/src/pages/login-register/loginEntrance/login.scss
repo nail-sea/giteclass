@@ -1,0 +1,67 @@
+@import '@/assets/styles/login-register.scss';
+.login-register__con{
+    &__logoEntrance{
+        width: 190px;
+        height: 258px;
+      
+        margin:144px auto 240px;
+        &__img{
+            width: 100%;
+            height: 100%;
+            @include eject(display, block);
+        }
+    }
+    &__clause__weapp{
+        background:#fff;
+        width: 80%;
+        background: #08bb08;
+        border-radius: 9px;
+        height: 96px;
+        line-height: 96px;
+        margin: 0 auto;
+        color: #fff;
+        font-size: 36px;
+    }
+    &__clause__h5__btn{
+        width: 80%;
+        background: #05be01;
+        border-radius: 9px;
+        height: 96px;
+        line-height: 96px;
+        margin: 0 auto;
+      
+        &__word{
+            font-size: 36px;
+            color: #fff;
+        }
+    }
+    &__clause__phoneLogin{
+        margin-top: 48px;
+        margin-bottom: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__word{
+            font-size:32px;
+            color: #4C4C4C;
+        }
+    }
+    &__clause__continer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__clause__word1{
+        margin-left: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

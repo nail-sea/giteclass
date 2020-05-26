@@ -1,0 +1,75 @@
+@import "./user.scss";
+.user {
+  // max-height: 100%;
+  // min-height: 100%;
+  // flex: 1;
+  height:100%;
+  background-color: #fff;
+  // padding-bottom: 0;
+  &__header {
+    justify-content: center;
+    &__bg {
+      top: 0px;
+    }
+    &__info {
+      padding-bottom: 145px;
+      &__admin {
+        z-index: 1;
+        &__text {
+          font-size: 24px;
+          color: #424242;
+        }
+      }
+      &__name {
+        height: 220px;
+        padding-top: 0px;
+        flex-direction: row;
+        align-items: center;
+        &__img {
+          &__img {
+            border-radius: 61px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+          }
+        }
+        &__wrapper {
+          flex: 1;
+          justify-content: center;
+        }
+        &__text {
+          justify-content: center;
+          &1 {
+              color: #424242;
+          }
+          &2 {
+            color: #424242;
+            // margin-top: 24px;
+            line-height: 50px;
+          }
+          &3{
+              color:#fff;
+              margin-top: 0;;
+          }
+
+        }
+      }
+      &__account {
+        position: absolute;
+        left: 24px;
+        right: 24px;
+        width: auto;
+        bottom: 0px;
+        margin: 0px;
+        &__item {
+          // flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  &__icon-list {
+    flex-direction: column;
+  }
+}

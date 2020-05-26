@@ -1,0 +1,13 @@
+@import './index.scss';
+.acc_mana{
+  &__bg-con{
+    margin-bottom:20px;
+  }
+  &__bg-con-btn{
+    justify-content:center;
+    align-items: center;
+    &__text{
+      // line-height: 32px;
+    }
+  }
+}

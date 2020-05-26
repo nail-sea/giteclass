@@ -1,0 +1,120 @@
+@import "@/assets/styles/theme.scss";
+.release{
+    &release_page{
+        background: #F4F4F4;
+        position: relative;
+        .release_page-link{
+            width: 100%;
+            background: #f4f4f4;
+            box-shadow:0px 0px 24px 0px rgba(0,0,0,0.08);
+            margin-bottom: 0;
+            .notice-bar{
+                margin-bottom: 0;
+            }
+        }
+        .release_page-content{
+            width: 100%;
+            height: 588px;
+            background: #FFFFFF;
+            margin-bottom: 20px;
+            &_title{
+                padding-top: 20px;
+                text-align: center;
+                color: #424242;
+                font-size:32px;
+                // font-family:PingFangSC-Regular;
+                // @include eject(font-family, 'PingFangSC-Regular' 'PingFang SC')
+                // font-family:PingFangSC-Regular,PingFang SC;
+            }
+            &_list{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 15px;
+                // width: 95%;
+                &__icon{
+                    width: 20%;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 10px 18px 10px 18px;
+                    &__img {
+                      width: 102px;
+                      height: 102px;
+                      // border-radius: 50%;
+                    }
+                    &__text{
+                      font-size: 24px;
+                      color: #424242;
+                    //   font-family:PingFangSC-Regular;
+                        // @include eject(font-family, 'PingFangSC-Regular' 'PingFang SC')
+                        // font-family:PingFangSC-Regular,PingFang SC;
+                    }
+                  }
+            }
+        }
+        .release_page-bottom{
+            width: 100%;
+            height: 520px;
+            background: #FFFFFF;
+            position: relative;
+            &_title1{
+                color: #424242;
+                font-size: 28px;
+                // font-family:PingFangSC-Medium;
+                // @include eject(font-family, 'PingFangSC-Medium' 'PingFang SC');
+                // font-family:PingFangSC-Medium,PingFang SC;
+                padding: 20px 0 10px 20px;
+                font-weight:bold;
+                &_count{
+                    font-size: 36px;
+                    color: $basics-color-font;
+                    // margin-left: 20px;
+                    font-weight:bold;
+                    text-align: center;
+                }
+            }
+            &_title2{
+                color: #424242;
+                font-size: 28px;
+                // font-family:PingFangSC-Medium;
+                // @include eject(font-family, 'PingFangSC-Medium' 'PingFang SC');
+                // font-family:PingFangSC-Medium,PingFang SC;
+                padding: 20px 0 10px 20px;
+            }
+            &_title3{
+                color: #424242;
+                font-size: 28px;
+                // font-family:PingFangSC-Medium;
+                // @include eject(font-family, 'PingFangSC-Medium' 'PingFang SC');
+                // font-family:PingFangSC-Medium,PingFang SC;
+                padding: 20px 0 10px 20px;
+            }
+            &_text{
+                color: rgba(160,160,160,1);
+                font-size: 28px;
+                // font-family:PingFangSC-Medium;
+                // @include eject(font-family, 'PingFangSC-Medium' 'PingFang SC');
+                // font-family:PingFangSC-Medium,PingFang SC;
+                padding: 20px 0 10px 20px;
+                text-align: center;
+                margin-top:300px;
+            }
+            &_btn{
+                margin: 30px 0 0 30px;
+                width: 686px;
+                height: 92px;
+                line-height: 92px;
+                color: #FFFFFF;
+                font-size: 36px;
+                outline: none;
+                background: $basics-color-font;
+                @include eject(border,none);;
+                // margin: 0;
+                padding:0 10px;
+                text-align: center;
+                border-radius: 10px;
+            }
+        }
+    }
+}

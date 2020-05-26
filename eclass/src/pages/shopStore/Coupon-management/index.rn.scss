@@ -1,0 +1,20 @@
+@import "../../user/card-center/index.rn.scss";
+.CARD_CENTER{
+    background-color: #fff;
+    &__tips{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-self: flex-start;
+        &__publish {
+          padding: 0 16px;
+          height: 44px;
+          background: rgba(255, 232, 223, 1);
+          border-radius: 8px;
+          font-size: 22px;
+          color: rgba(255, 105, 62, 1);
+          text-align-vertical: center;
+          // margin-left: 30px;
+        }
+      }
+}

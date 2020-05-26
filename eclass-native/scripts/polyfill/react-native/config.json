@@ -1,0 +1,7 @@
+[
+  {
+    "source":"./Libraries/Text/TextInput/RCTBaseTextInputView.m",
+    "package":"react-native",
+    "target":"../../Text/TextInput/RCTBaseTextInputView.m"
+  }
+]

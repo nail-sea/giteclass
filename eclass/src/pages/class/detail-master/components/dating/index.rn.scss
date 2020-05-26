@@ -1,0 +1,9 @@
+@import './index.scss';
+@import '../../common/index.rn.scss';
+.jw-detail{
+    &__advantage{
+        &__list{
+            margin-top: 12px;
+        }
+    }
+}

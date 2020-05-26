@@ -1,0 +1,19 @@
+.serivce-nodata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+    &__img{
+        width:270px;
+        height:270px;
+        margin-top:240px;
+    }
+    &__text{
+        margin-top:40px;
+        font-size:28px;
+        // color:rgba(161,161,161,1);
+        line-height:40px;
+    }
+}

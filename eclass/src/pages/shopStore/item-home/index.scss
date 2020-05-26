@@ -1,0 +1,87 @@
+@import "@/assets/styles/theme.scss";
+.item_home {
+  background: #fff;
+  padding: 29px 32px 5px 32px;
+  margin-bottom: 22px;
+  &__top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    &__view {
+      display: flex;
+      &__img {
+        width: 180px;
+        height: 130px;
+        background: rgba(216, 216, 216, 1);
+        border-radius: 9px;
+      }
+      &__box {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        justify-content: flex-start;
+        flex: 1;
+        &__title {
+          font-size: 32px;
+          font-weight: 400;
+          color: rgba(66, 66, 66, 1);
+          @include eject(line-height, 32px);
+        }
+      }
+      &__view {
+        margin: 15px 0;
+        line-height: 24px;
+        &__text {
+          font-size: 24px;
+          font-weight: 400;
+          @include eject(line-height,24px);
+          @include eject(height, 24px);
+          margin-right: 20px;
+          color: rgba(160, 160, 160, 1);
+          padding-left: 20px;
+          @include border(left, 2px, solid, #EBEBEB);
+        }
+        &__text-first {
+          font-size: 24px;
+          font-weight: 400;
+          @include eject(line-height, 24px);
+          @include eject(height, 24px);
+          margin-right: 20px;
+          color: rgba(160, 160, 160, 1);
+        }
+      }
+      &__bottom {
+        margin-top: 15px;
+        @include border(top, 2px, dashed, #ebebeb);
+        font-size: 24px;
+        color: #a0a0a0;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: row;
+        // justify-content: flex-start;
+        // align-items: center;
+        // border:1px solid red;
+        width:500px;
+        overflow: hidden;    
+        @include eject(text-overflow,ellipsis);    
+        @include eject(white-space, nowrap);
+        @include eject(display, inline-block);
+
+        &__icon {
+          background: rgba(255, 202, 86, 1);
+          padding:4px;
+          border-radius: 2px;
+          font-size: 20px;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 1);
+          @include eject(line-height, 28px);
+          margin-right: 10px;
+        }
+        &__text {
+          font-size: 24px;
+          @include eject(line-height, 24px);
+        }
+      }
+    }
+  }
+}

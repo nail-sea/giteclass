@@ -1,0 +1,25 @@
+@import './index.scss';
+.notice-view {
+  &__view{
+    &__view{
+      &__title{
+        &__text{
+        color: rgba(10, 10, 10, 1);
+        font-size:28px;
+        }
+      }
+      &__content{
+        &__text{
+          font-size: 24px;
+          color: rgba(160, 160, 160, 1);
+        }
+      }
+      &__btn{
+        &__text{
+          font-size: 28px;
+          color:rgba(10, 10, 10, 1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+@import '@/assets/styles/theme.scss';
+
+.commom-tag{
+  height: 34px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding:0 6px;
+  border-radius: 4px;
+  margin-right: 5px;
+  &__text{
+    font-size:24px;
+    @include text-ellipsis()
+  }
+
+  &__top{
+    background: #ffca56;
+    &__text{
+      color: #fff;
+    }
+  }
+
+  &__recommend{
+    background: #66a1fe;
+    &__text{
+      color: #fff;
+    }
+  }
+
+  &__sex-2{
+    background: #F9798A;
+    padding: 0px 8px 4px;
+    &__text{
+      color: #fff;
+    }
+  }
+
+  &__sex-1{
+    background: #25D3D1;
+    padding: 0px 8px 4px;
+    &__text{
+      color: #fff;
+    }
+  }
+
+  &__jobHunting{
+    border: 2px solid #6FBAF2;
+    background: #F7FCFF;
+    &__text{
+      color: #6FBAF2;
+    }
+  }
+
+  &__buyRentHouse{
+    border: 2px solid #F67C7F;
+    background: #FFF9F9;
+    &__text{
+      color: #FF787B;
+    }
+  }
+
+  &__secondHand{
+    border: 2px solid #FFCA56;
+    background: #FFFCF4;
+    &__text{
+      color: #F9C44E;
+    }
+  }
+
+  &__wantedAny{
+    border: 2px solid #EEA889;
+    background: #FFFCF7;
+    &__text{
+      color: #FF9769;
+    }
+  }
+
+  &__localService{
+    border: 2px solid #EEA889;
+    background: #FFFCF7;
+    &__text{
+      color: #FF9769;
+    }
+  }
+
+  &__localMeet{
+    border: 2px solid #F67C7F;
+    background: #FFF9F9;
+    &__text{
+      color: #FF787B;
+    }
+  }
+
+  &__businessPartnership{
+    border: 2px solid #6FBAF2;
+    background: #F7FCFF;
+    &__text{
+      color: #6FBAF2;
+    }
+  }
+
+  &__productPromotion{
+    border: 2px solid #F67C7F;
+    background: #FFF9F9;
+    &__text{
+      color: #FF787B;
+    }
+  }
+
+  &__carpoolingCar{
+    border: 2px solid #EEA889;
+    background: #FFFCF7;
+    &__text{
+      color: #FF9769;
+    }
+  }
+
+  &__dating{
+    border: 2px solid #F67C7F;
+    background: #FFF9F9;
+    &__text{
+      color: #FF787B;
+    }
+  }
+}

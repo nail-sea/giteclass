@@ -1,0 +1,19 @@
+@import './index.scss';
+.top-wrap {
+	height: 100%;
+	background-color:#fff;
+	&__bottom {
+		&__item {
+			flex-direction: row;
+      align-items: center;
+      height:95px;
+			&__view {
+				flex-direction: row;
+				&__text {
+					font-size: 32px;
+					color: rgba(66, 66, 66, 1);
+				}
+			}
+		}
+	}
+}

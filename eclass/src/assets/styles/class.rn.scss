@@ -1,0 +1,10 @@
+@import './class.scss';
+.fixed_jh_btn{
+    position: absolute;
+}
+.class-modal{
+    flex: 1;
+    &__wrap{
+        flex: 1;
+    }
+}

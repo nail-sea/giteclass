@@ -1,0 +1,12 @@
+[
+	{
+		"source": "./initRouter.js",
+		"package":"@tarojs/taro-router-rn",
+		"target":"../dist/initRouter.js"
+	},
+	{
+		"source":"./TaroProvider.js",
+		"package":"@tarojs/taro-router-rn",
+		"target":"../dist/TaroProvider.js"
+	}
+]

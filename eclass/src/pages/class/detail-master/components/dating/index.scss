@@ -1,0 +1,24 @@
+@import '../../common/index.scss';
+.jw-detail{
+  &__advantage{
+    &__title1{
+      font-size: $font-big-size;
+      color:$text-color-default;
+    }
+    &__list{
+      display: flex;
+      flex-direction: row;
+      margin-bottom:12px;
+      flex-wrap: wrap;
+      &__text{
+        margin-right:30px;
+        padding:6px 18px;
+        font-size: $font-default-size;
+        color:$main-color;
+        border-radius: 8px;
+        background-color: #FFE8DF;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

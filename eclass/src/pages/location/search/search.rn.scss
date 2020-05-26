@@ -1,0 +1,25 @@
+@import "./search.scss";
+.location-search {
+  &__header {
+    &__btn {
+      justify-content: center;
+      align-items: center;
+      &__text {
+        font-size: 32px;
+        color: #323232;
+      }
+    }
+  }
+  &__panel {
+    &__item {
+      justify-content:center;
+      &__text {
+        &__text {
+          color: #a0a0a0;
+          font-size: 28px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}

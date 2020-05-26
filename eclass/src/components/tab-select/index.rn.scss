@@ -1,0 +1,8 @@
+@import './index.scss';
+.tab-select{
+    &__body{
+        position: absolute;
+        background-color: rgba(0,0,0,.4);
+        height:2500px;
+    }
+}

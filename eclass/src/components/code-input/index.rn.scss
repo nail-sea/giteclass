@@ -1,0 +1,40 @@
+@import './index.scss';
+.code-input{
+    &__con{
+        &__word2{
+            &__text{
+                font-size: 44px;
+                color:$basics-color-font;
+            }
+        }
+        &__word3{
+            &__text{
+                font-size: 32px;
+                color:#a0a0a0
+            }
+        }
+        &__code{
+            &__time{
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            &__text{
+                font-size: 32px;
+                line-height: 60px;
+                color:$basics-color-font;
+            }
+            &__get-again{
+                align-items: center;
+                justify-content:center;
+            }
+        }
+        &__code-input{
+            &__show{
+                &__text{
+                    font-size: 44px;
+                }
+            }
+        }
+    }
+}

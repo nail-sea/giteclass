@@ -1,0 +1,20 @@
+@import '@/assets/styles/mixins.scss';
+.modal{
+  display:flex;
+  @include eject(position, fixed);
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  z-index: 4000;
+  pointer-events: auto;
+  &__mask{
+    display:flex;
+    flex: 1;    
+  }
+  &__container{
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+  }
+}

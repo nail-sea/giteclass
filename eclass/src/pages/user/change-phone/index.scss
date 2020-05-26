@@ -1,0 +1,35 @@
+@import '@/assets/styles/mixins.scss';
+.change-phone{
+    width: 100%;
+    &__header{
+        margin:210px auto 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        &-img{
+            width: 180px;
+            height:180px;
+            border-radius: 90px;
+            @include eject(border-radius, 50%);
+        }
+    }
+    &__tips1{
+        font-size:24px;
+        text-align: center;
+    }
+    &__phone{
+        font-size:36px;
+        text-align: center;
+        margin:12px 0 120px;
+    }
+    &__btn{
+        width: 100%;
+        padding:0 32px;
+    }
+    &__tips2{
+        font-size:24px;
+        color: #A0A0A0;
+        padding:20px 32px;
+    }
+}

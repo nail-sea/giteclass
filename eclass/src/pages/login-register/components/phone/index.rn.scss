@@ -1,0 +1,14 @@
+@import './index.scss';
+.login-register-phone{
+    // height: 100px;
+    &__input{
+        height: 88px;
+        padding:0;
+        
+        &__code{
+            &__text{
+                font-size:28px;
+            }
+        }
+    }
+}

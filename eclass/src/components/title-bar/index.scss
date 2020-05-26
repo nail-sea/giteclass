@@ -1,0 +1,38 @@
+@import "@/assets/styles/theme.scss";
+.title-bar-bg{
+    width: 100%;
+    background: $white;
+    height: 88px;
+    // box-shadow: 0px 2px 0px rgba(0,0,0,0.15);
+    // @include eject(box-shadow, 0px 2px 0px 0px rgba(0,0,0,0.15));
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    @include border(bottom, 1px, solid, #ebebeb);
+    &--no-bottom-border{
+        border-width: 0;
+    }
+    &__back{
+        position: absolute;
+        left: 10px;
+        // top: 22px;
+        font-size:28px;
+        color: #424242;
+        display: flex;
+        align-items: center;
+    }
+    &__recharge{
+        position: absolute;
+        right: 10px;
+        top: 22px;
+        font-size:28px;
+        color: #FFF;
+        display: flex;
+        align-items: center;
+    }
+    &__text{
+        color: #424242;
+        font-size: 36px;
+    }
+}

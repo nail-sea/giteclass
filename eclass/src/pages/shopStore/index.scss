@@ -1,0 +1,33 @@
+@import '@/assets/styles/reset.scss';
+.shop-store {
+  background-color: #F4F4F4;
+  &__banner {
+    background-color: #f4f4f4;
+    padding: 0 28px 22px 28px;
+  }
+  &-select-content{
+    height: 102px;
+  }
+  &-select--fixed{
+    // position: absolute;
+    @include eject(position, fixed);
+    top:88px;
+    left:0;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+  }
+  &-select--weapp--fixed{
+    // position: absolute;
+    @include eject(position, fixed);
+    top:0;
+    left:0;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+  }
+  &__list{
+    padding-top:22px;
+    padding-bottom: 110px;
+  }
+}

@@ -1,0 +1,10 @@
+@import './index.scss';
+@import "@/assets/styles/form.rn.scss";
+.Form-view{
+  &__button{
+    position:absolute;
+  }
+}
+.apply-settled{
+  background-color: #fff;
+}

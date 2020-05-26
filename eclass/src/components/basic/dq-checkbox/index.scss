@@ -1,0 +1,21 @@
+@import "@/assets/styles/theme.scss";
+.h5-dq-checkbox__content__checkbox{
+    // background-color: #A0A0A0;
+    border-radius: 20px;
+    // @include eject(border,none);;
+    color: #fff;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+}
+.h5-dq-checkbox__content__checkbox--active{
+    background-color: $basics-color-font;
+    border-radius: 20px;
+    @include eject(border,none);;
+    color: #fff;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+}

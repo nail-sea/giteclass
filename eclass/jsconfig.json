@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+      "experimentalDecorators": true,
+      "paths":{
+          "@/assets/*":["./src/assets/*"],
+          "@/components/*":["./src/components/*"],
+          "@/basicComponents/*":["./src/basicComponents/*"],
+          "@/utils/*":["./src/utils/*"],
+          "@/pages/*":["./src/pages/*"],
+          "@/config/*":["./src/config/*"],
+          "@/platfrom/*":["./src/platfrom/*"]
+      }
+  }
+}

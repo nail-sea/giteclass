@@ -1,0 +1,10 @@
+@import './index.scss';
+.shop-store{
+  flex: 1;
+  &__wrap{
+    flex: 1;
+  }
+  &__list{
+    min-height: 1000px;
+  }
+}

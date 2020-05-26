@@ -1,0 +1,10 @@
+@import './index.scss';
+.dq-input{
+  flex: 1;
+  flex-direction: row;
+  padding: 0;
+  &__input{
+    // background:#f00;
+    padding:0;
+  }
+}

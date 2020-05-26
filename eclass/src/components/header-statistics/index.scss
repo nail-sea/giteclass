@@ -1,0 +1,23 @@
+.header-statistics{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 100%;
+    padding:0 36px 20px;
+    &__item{
+        flex: 1;
+        color: #fff;
+        font-size: 26px;
+        opacity: 0.9;
+        text-align: center;
+        &__left{
+            text-align: left;
+        }
+        &__right{
+            text-align: right;
+        }
+        &__center{
+            text-align: center;
+        }
+    }
+}

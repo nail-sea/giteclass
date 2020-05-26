@@ -1,0 +1,19 @@
+// @import "./index.scss";
+@import "@/assets/styles/form.rn.scss";
+// @import "@/assets/styles/class.rn.scss";
+.buyRentHouse {
+  &__contentimg {
+    &__center {
+      &__label-con {
+        &__item {
+          &__img {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
+.release-wanted{
+  background-color: #fff;
+}

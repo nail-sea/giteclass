@@ -1,0 +1,27 @@
+@import "./index.scss";
+.detail-master {
+  flex: 1;
+  background-color:#fff;
+  &__wrap{
+    padding-bottom:170px;
+  }
+  &__btn {
+    position: absolute;
+    left: 0;
+  }
+  &__recommend {
+    &__title {
+      &__text {
+        font-size: 32px;
+        color: #323232;
+        font-weight: bold;
+      }
+    }
+  }
+  &__bottom{
+    position: absolute;
+    height: 157px;
+    bottom:0;
+    left:0;
+  }
+}

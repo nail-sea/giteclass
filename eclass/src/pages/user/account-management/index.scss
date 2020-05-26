@@ -1,0 +1,23 @@
+@import "@/assets/styles/theme.scss";
+.acc_mana {
+  width: 100%;
+  min-height: 100%;
+  background: #f4f4f4;
+  &__bg-con {
+    background: #fff;
+    padding: 0 32px;
+  }
+  &__bg-con-btn {
+    background: #fff;
+    text-align: center;
+    height: 110px;
+    font-size: 32px;
+    line-height: 110px;
+    &__text {
+      line-height: 110px;
+      font-size: 32px;
+      font-weight: 400;
+      color: rgba(66, 66, 66, 1);
+    }
+  }
+}

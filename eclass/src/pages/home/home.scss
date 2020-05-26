@@ -1,0 +1,53 @@
+@import "@/assets/styles/reset.scss";
+.home{
+  // background: #F4F4F4;
+  position: relative;
+  &__wrap {
+    @include eject(-webkit-overflow-scrolling, touch);
+    // padding-bottom: 78px;
+  }
+  &__header{
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 10;
+      background-color: $main-color;
+      @include eject(background, linear-gradient(to top, #FF9952, #FF7B49, #FF4E3A));
+      padding-bottom: 180px;
+  }
+  &__link{
+    width: 92%;
+    margin:-200px auto 22px;
+    background: #fff;
+    box-shadow:0px 0px 24px rgba(0,0,0,0.08);
+    @include eject(box-shadow, 0px 0px 24px 0px rgba(0,0,0,0.08));
+    border-radius:12px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+  }
+  &__banner{
+    width: 92%;
+    margin:0 auto 22px;
+    border-radius:12px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+  
+  }
+  &__tab-bar{
+    position: relative;
+    z-index: 100;
+    @include border(bottom, 1px, solid, #eee);
+  }
+  &__main-list{
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+
+  
+  
+

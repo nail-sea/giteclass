@@ -1,0 +1,10 @@
+{
+  "symbol_url": "http://at.alicdn.com/t/font_1477341_xixekldfz8n.js",
+  "save_dir": "./src/components/iconfont",
+  "use_typescript": false,
+  "platforms": "*",
+  "use_rpx": true,
+  "trim_icon_prefix": "icon",
+  "default_icon_size": 18,
+  "componnent_name": "IconFont"
+}

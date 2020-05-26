@@ -1,0 +1,134 @@
+@import "@/assets/styles/theme.scss";
+.buy-container {
+  &__top {
+    margin: 30px 40px 0 30px;
+    background: $white;
+    box-shadow: 0px 2px 24px  rgba(0, 0, 0, 0.08);
+    @include eject(box-shadow, 0px 2px 24px 0px rgba(0, 0, 0, 0.08));
+    border-radius: 2px;
+    padding: 32px 32px 30px 32px;
+    &__view {
+      display: flex;
+      &__img {
+        width: 180px;
+        height: 130px;
+        background: rgba(216, 216, 216, 1);
+        border-radius: 9px;
+      }
+      &__title {
+        font-size: $font-big-size;
+        color: $text-color-default;
+      }
+      &__box {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 130px;
+      }
+      &__cont {
+        &__price {
+          font-size: $font-big-size;
+          color: $main-color;
+          @include eject(line-height, 32px);
+        }
+        &__default {
+          font-size: $font-small-size;
+          margin-left: 14px;
+          color: rgba(200, 200, 200, 1);
+          @include eject(line-height, 24px);
+          text-decoration: line-through;
+        }
+      }
+    }
+    &__bottom-view {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      @include eject(line-height, 22px);
+    }
+    &__bottom {
+      display: flex;
+      flex-direction: row;
+      &__view {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 20px;
+        &__text {
+          font-size: $font-small-size;
+          font-weight: 400;
+          color: $default-color-font;
+          @include eject(line-height, 28px);
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  &__middle {
+    margin: 15px 32px 0 32px;
+    &__view {
+      display: flex;
+      justify-content: space-between;
+      @include border(bottom, 1px, solid, #ebebeb);
+      @include eject(line-height, 90px);
+      height: 90px;
+      flex-direction: row;
+      align-items: center;
+      &__text {
+        font-size: $font-default-size;
+        font-weight: 400;
+        color: $text-color;
+        @include eject(line-height, 28px);
+      }
+      &__price {
+        font-size: $font-big-size;
+        color: $main-color;
+        @include eject(line-height, 32px);
+      }
+    }
+  }
+  &__bg {
+    background-color: #f4f4f4;
+    padding: 22px 0;
+    &__tel {
+      padding: 0 32px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      @include eject(line-height, 90px);
+      height: 90px;
+      background-color: $white;
+      font-weight: 400;
+    }
+  }
+  &__notice {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    &__title {
+      font-size: $font-big-size;
+      font-weight: 500;
+      color: $text-color;
+      @include eject(line-height, 32px);
+      margin-bottom: 30px;
+    }
+    &__sub-title {
+      font-size: $font-default-size;
+      color: $text-color;
+      line-height: 60px;
+    }
+    &__text {
+      font-size: $font-middle-size;
+      color: $default-color-font;
+      line-height: 44px;
+      padding-left: 28px;
+    }
+  }
+  &__button {
+    margin: 10px 79px;
+  }
+}

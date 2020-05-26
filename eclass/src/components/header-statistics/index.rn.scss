@@ -1,0 +1,13 @@
+@import './index.scss';
+.header-statistics{
+    // height: 34.5px;
+    align-items: center;
+    flex-direction: row;
+    &__item{
+        align-items: center;
+        justify-content:center;
+        &__text{
+            color: #fff;
+        }
+    }
+}

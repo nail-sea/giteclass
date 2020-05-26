@@ -1,0 +1,46 @@
+@import "@/assets/styles/theme.scss";
+
+/**
+ * // NOTE  RN Swiper 的 indicator 位置与 H5、小程序不同
+ * 这边通过 height + 负 margin 实现一致样式，或者自己实现 indicator 也不难
+ */
+
+.home-icon-list {
+  margin: -30px 0 -40px;
+  height: 430px;
+  background: #ffffff;
+  overflow: hidden;
+
+  @include eject(height, 320px);
+  @include eject(margin, 0);
+}
+
+.home-icon-list__swiper {
+  // NOTE RN 的 Swiper 需要有高度，否则会报错
+  height: 360px;
+  padding-bottom: 60px;
+  &-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__icon{
+      width: 20%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__img {
+        width: 102px;
+        height: 102px;
+        // border-radius: 50%;
+      }
+      &__text{
+        font-size: 24px;
+        color: #424242;
+        // font-family: 'PingFangSC-Regular';
+        // @include eject(font-family, 'PingFangSC-Regular' 'PingFang SC');
+        // font-family:PingFangSC-Regular,PingFang SC;
+      }
+    }
+  }
+}

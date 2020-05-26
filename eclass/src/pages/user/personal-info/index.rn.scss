@@ -1,0 +1,19 @@
+@import "./index.scss";
+.bg-con {
+  background: #fff;
+  padding: 0 32px;
+  margin-bottom: 20px;
+}
+.user-item__img{
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.acc-mana{
+  &__picker-text{
+    &__text{
+      font-size: 28px;
+      color:#A0A0A0;
+    }
+  }
+}

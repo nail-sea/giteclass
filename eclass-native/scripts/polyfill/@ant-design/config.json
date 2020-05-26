@@ -1,0 +1,12 @@
+[
+    {
+			"source":"./style/themes/default.js",
+			"package":"@ant-design/react-native",
+			"target":"../style/themes/default.js"
+		},
+		{
+			"source":"./picker/style/index.js",
+			"package":"@ant-design/react-native",
+			"target":"../picker/style/index.js"
+		}
+]

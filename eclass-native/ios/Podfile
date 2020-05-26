@@ -1,0 +1,58 @@
+platform :ios, '10.0'
+
+require_relative '../node_modules/react-native-unimodules/cocoapods'
+
+target 'eClass' do
+  # Pods for HelloWorld
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'CxxBridge',
+    'DevSupport',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTBlob',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket',
+  ]
+
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+   # react-native-maps dependencies
+   pod 'react-native-maps', path:'../node_modules/react-native-maps'
+
+  use_unimodules!
+
+  pod 'RCTWeChat', :path => '../node_modules/react-native-wechat'
+
+  pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
+
+  pod 'react-native-amap-geolocation', :path => '../node_modules/react-native-amap-geolocation/lib/ios'
+
+
+
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+
+  pod 'IQKeyboardManager'
+
+  pod 'RNFS', :path => '../node_modules/react-native-fs'
+
+
+  pod 'RNViewShot', :path => '../node_modules/react-native-view-shot'
+
+  pod 'RNExitApp', :path => '../node_modules/react-native-exit-app'
+
+end

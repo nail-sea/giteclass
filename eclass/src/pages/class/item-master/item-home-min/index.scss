@@ -1,0 +1,195 @@
+@import "@/assets/styles/theme.scss";
+.main-list__item {
+  width: 100%;
+  padding: 30px;
+  @include border(bottom, 1px, solid, #eee);
+  position: relative;
+  &-header {
+    display: flex;
+    &__img {
+      width: 90px;
+      height: 90px;
+      border-radius: 8px;
+    }
+    &__titles {
+      flex: 1;
+      &__label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      &__types {
+        display: flex;
+        margin-top: 5px;
+        align-items: flex-start;
+        @include eject(align-items, top);
+        &__item4 {
+          margin-left: 5px;
+          padding: 0 6px;
+          text-align: center;
+          font-size: 28px;
+          @include eject(line-height, normal);
+          color: #000000;
+          text-align: left;
+          max-width: 332px;
+          overflow: hidden;
+          @include eject(white-space, nowrap);
+          @include eject(text-overflow, ellipsis);
+        }
+      }
+      &__tags {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 16px;
+        margin-bottom: 8px;
+        &__item {
+          background: rgba(241, 241, 241, 1);
+          border-radius: 4px;
+          font-weight: 400;
+          color: rgba(160, 160, 160, 1);
+          line-height: 34px;
+          font-size: 22px;
+          margin-right: 12px;
+          padding: 0 7px;
+          @include eject(display, inline-block);
+        }
+      }
+    }
+    &__call {
+      &__btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 124px;
+        height: 44px;
+        @include eject(outline, none);
+        background: #ffe8df;
+        @include eject(border, none);
+        margin: 0;
+        padding: 0 10px;
+        border-radius: 10px;
+        &__text{
+          font-size: 22px;
+          color: #ff693e;
+        }
+      }
+      &__distance {
+        color: #bfbfbf;
+        font-size: 22px;
+        margin-top: 10px;
+      }
+    }
+    &__salary {
+      font-size: 32px;
+      color: $basics-color-font;
+    }
+    &__name {
+      font-size: 28px;
+      color: #424242;
+      padding-left: 20px;
+      @include eject(line-height, 1);
+    }
+  }
+  &-content {
+    position: relative;
+    font-size: 30px;
+    // &__detail{
+    //   position: absolute;
+    //   top:0;
+    //   right: 0;
+    // }
+    // &__title{
+    //   display: flex;
+    //   flex-direction: row;
+    // }
+    &__word {
+      margin-top: 10px;
+      @include eject(line-height, 1.4);
+    }
+    &__all {
+      position: absolute;
+      right: 5px;
+      bottom: -2px;
+      color: #5e7ed4;
+      text-decoration: underline;
+    }
+  }
+  &-imglist {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    &__img {
+      width: 162px;
+      height: 162px;
+      border-radius: 9px;
+      margin-right:13px;
+      overflow: hidden;
+    }
+    
+    &__item {
+      position: relative;
+      // width: 25%;
+    }
+    &__mask {
+      position: absolute;
+      width: 162px;
+      height: 162px;
+      background: #000;
+      opacity: 0.6;
+      top: 0;
+      left: 0;
+      color: #fff;
+      line-height: 162px;
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      border-radius: 9px;
+    }
+  }
+  &-footer {
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 26px;
+    color: #a0a0a0;
+    &__header {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      &__img {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+        @include eject(border-radius, 50%);
+      }
+    }
+    &__name {
+      margin-right: 30px;
+    }
+    &__time {
+      flex: 1;
+    }
+    &__num {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      &-icon {
+        margin-right: 12px;
+      }
+    }
+    &__num-share {
+      display: flex;
+      margin-left: 80px;
+      align-items: center;
+      justify-content: space-evenly;
+      &-icon {
+        margin-right: 12px;
+      }
+    }
+  }
+}

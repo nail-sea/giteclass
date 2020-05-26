@@ -1,0 +1,41 @@
+@import '@/assets/styles/theme.scss';
+.share-wrap__code {
+  height:100%;
+    &__bg{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      background: #F4F4F4;
+      &__view{
+        margin-top: 140px;
+        padding-top: 70px;
+        width:686px;
+        border-radius: 10px;
+        background: #fff;
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__img{
+          width:450px;
+          height:450px;
+          overflow: hidden;
+        }
+        &__text{
+          background:#F87C6A;
+          border-radius:10px;
+          margin: 120px 0 70px;
+          display: flex;
+          &__text{
+            color: #fff;
+            font-size: 32px;
+            padding: 12px 50px;
+          }
+        }
+      }
+    }
+    
+
+   
+}

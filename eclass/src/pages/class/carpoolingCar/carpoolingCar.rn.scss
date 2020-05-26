@@ -1,0 +1,77 @@
+@import "./carpoolingCar.scss";
+.carpoolingCar {
+  flex: 1;
+	&__main-list{
+    &__item{
+      box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+      elevation: 1;
+      &__header{
+        &__img{
+          justify-content:center;
+          align-items: center;
+          &__img{
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        &__call{
+          &__btn{
+            align-items: center;
+            justify-content:center;
+            &__text{
+              color:$basics-color-font;
+            }
+          }
+        }
+      }
+      &__tips{
+        &__text{
+          color:#A0A0A0;
+          font-size: 24px;
+          line-height:39px;
+        }
+      }
+    }
+  }
+  &__release-tips{
+    &__bg{
+      box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+    }
+    &__text{
+      color:#fff;
+      font-size: 24px;
+    }
+    &__btn{
+      justify-content:center;
+      align-items: center;
+      &__text{
+        font-size: 24px;
+        color: #fff;
+      }
+    }
+  }
+  &__search{
+    elevation: 10;
+    z-index:0;
+    &__header{
+      &__btn{
+        text-align: center;
+        justify-content:center;
+        text-align-vertical:center;
+        &--active{
+          text-align: center;
+        }
+        &__text{
+          color:#323232;
+          &--active{
+            color:#fff;
+          }
+        }
+      }
+    }
+  }
+}
+.class-modal__wrap{
+  flex: 1;
+  max-height: 80%
+}

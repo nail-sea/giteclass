@@ -1,0 +1,24 @@
+@import './location.scss';
+.index{
+  background-color: #fff;
+  flex: 1;
+}
+.search-page{
+  &__tags{
+    flex-direction: row;
+  }
+}
+.location__cascader{
+  flex: 1;
+}
+.location{
+  &__history{
+    &__title{
+      flex-direction: row;
+      &__text{
+        font-size:$font-best-size;
+        color:$title-color-font;
+      }
+    }
+  }
+}

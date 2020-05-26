@@ -1,0 +1,250 @@
+@import "@/assets/styles/theme.scss";
+.carpoolingCar {
+  background: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  @include eject(-webkit-overflow-scrolling,auto !important);
+  &__release-tips {
+    width: 100%;
+    padding: 17px 28px 10px;
+    height: 88px;
+    font-size: 24px;
+    color: #fff;
+    background: #fff;
+    &__bg {
+      padding: 0 30px;
+      height: 60px;
+      background: #5b5b5b;
+      box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+      @include eject(box-shadow, 0px 0px 24px 0px rgba(0, 0, 0, 0.15));
+      border-radius: 12px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__btn {
+      width: 86px;
+      height: 40px;
+      border-radius: 8px;
+      text-align: center;
+      background: $basics-color-font;
+      &__text {
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  &__main-content {
+    padding-top: 20px;
+    // padding-bottom: 320px;
+  }
+  &__main-list {
+    width: 100%;
+    padding: 0 28px;
+    background: #fff;
+    &__item {
+      width: 100%;
+      padding: 30px;
+      position: relative;
+      box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+      @include eject(box-shadow, 0px 0px 24px 0px rgba(0, 0, 0, 0.15));
+      border-radius: 12px;
+      margin-bottom: 22px;
+      &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 28px;
+        &__img {
+          width: 84px;
+          height: 84px;
+          border-radius: 42px;
+          overflow: hidden;
+          margin-right: 24px;
+          &__img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &__content {
+          flex: 1;
+        }
+        &__tags {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-top: 10px;
+          &__item {
+            background: #f1f1f1;
+            border-radius: 4px;
+            color: #a0a0a0;
+            line-height: 34px;
+            font-size: 22px;
+            margin-right: 12px;
+            padding: 2px 7px;
+            @include eject(display, inline-block);
+          }
+        }
+        &__call {
+          width: 140px;
+          &__btn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 134px;
+            height: 46px;
+            line-height: 46px;
+            color: $basics-color-font;
+            font-size: 22px;
+            margin: 0;
+            padding: 0 10px;
+            text-align: center;
+            border-radius: 10px;
+            background: #ffe8df;
+            @include eject(border, none);
+            @include eject(outline, none);
+            &__text {
+              margin-left: 4px;
+            }
+          }
+        }
+      }
+      &__info {
+        font-size: 28px;
+        margin-top: 10px;
+        &__item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          &__text {
+            padding-left: 30px;
+          }
+        }
+      }
+      &__tips {
+        color: #a0a0a0;
+        line-height: 39px;
+        font-size: 24px;
+        margin-top: 8px;
+      }
+    }
+  }
+  &__search {
+    // position: absolute;
+    // @include eject(position, fixed);
+    width: 100%;
+    background: #fff;
+    height: 272px;
+    // box-shadow: 0px -2px 24px #000;
+    // @include eject(box-shadow, 0px 0px 24px 0px rgba(0, 0, 0, 0.15));
+    padding: 30px 30px 0;
+    border-top: 1px solid #F1F3F8;
+    &__header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &__btn {
+        width: 108px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        margin-right: 50px;
+        &--active {
+          background: $basics-color-font;
+          color: #fff;
+          border-radius: 8px;
+        }
+      }
+    }
+    &__input {
+      width: 100%;
+      &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 28px 0;
+        @include border(bottom, 1px, solid, #ebebeb);
+        min-height: 86px;
+        &__text {
+          font-size: 28px;
+          padding-left: 30px;
+        }
+        &__placeholder {
+          font-size: 28px;
+          color: #a0a0a0;
+          padding-left: 30px;
+        }
+      }
+    }
+    &-modal{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left:0;
+      z-index: 300;
+      &__mask{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left:0;
+        background: #000;
+        opacity: 0.4;
+      }
+      &__content{
+        position: absolute;
+        width: 100%;
+        height: 70%;
+        bottom:0;
+        left:0;
+        z-index: 301;
+        background: #fff;
+      }
+    }
+
+  }
+  &__search-continer {
+    position: absolute;
+    @include eject(position, fixed);
+    width: 100%;
+    height: 100%;
+    padding-top: 300px;
+    @include eject(overflow-x, auto);
+    left: 0;
+    bottom: -200%;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
+    @include eject(box-shadow, 0px 0px 24px 0px rgba(0, 0, 0, 0.15));
+    z-index: 200;
+    &--active {
+      bottom: 0;
+      @include eject(animation, bottomToTop 0.4s);
+    }
+    &__bg {
+      background: #000;
+      opacity: 0.6;
+      position: absolute;
+      @include eject(position, fixed);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+    &__content {
+      background: #fff;
+      height: 100%;
+      position: relative;
+      z-index: 202;
+    }
+  }
+}

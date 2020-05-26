@@ -1,0 +1,60 @@
+@import "@/assets/styles/mixins.scss";
+.dq-textarea {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.dq-textarea__clear {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 10px;
+  bottom: 0;
+  margin-top: -18px;
+  z-index: 20;
+}
+.dq-textarea__clear__img {
+  width: 100%;
+  height: 100%;
+}
+
+.dq-textarea__input {
+  width: 90%;
+  height: 100px;
+  @include eject(border, none);
+  @include eject(font-size, inherit);
+  @include eject(outline, none);
+  @include eject(resize, none);
+
+  &-style1 {
+    width: 90%;
+    // height: 100%;
+    height: 100px;
+    @include eject(border, none);
+    @include eject(font-size, inherit);
+    @include eject(outline, none);
+    @include eject(resize, none);
+    &::-webkit-input-placeholder {
+      /* WebKit browsers */
+      color: #fff;
+    }
+  }
+  &-style2 {
+    @include eject(font-family, inherit);
+    width: 90%;
+    // height: 100%;
+    height: 100px;
+    @include eject(border, none);
+    @include eject(font-size, inherit);
+    @include eject(outline, none);
+    padding: 4px;
+    // @include eject(line-height, 1.6);
+    @include eject(box-sizing, border-box);
+    @include eject(resize, none);
+    &::-webkit-input-placeholder {
+      /* WebKit browsers */
+      color: #a0a0a0;
+    }
+  }
+}

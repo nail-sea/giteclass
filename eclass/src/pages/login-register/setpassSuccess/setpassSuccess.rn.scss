@@ -1,0 +1,9 @@
+@import './setpassSuccess.scss';
+.login-register{
+  &__success-word{
+    align-items: center;
+    &__text{
+      font-size: 34px;
+    }
+  }
+}

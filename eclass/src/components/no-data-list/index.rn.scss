@@ -1,0 +1,9 @@
+@import './index.scss';
+.nodata-continer{
+    align-items: center;
+    &__img{
+        &__img{
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import './search.scss';
+.search-page{
+  height:100%;
+  &__header{
+    &__input{
+      flex: 1;
+      align-items: center;
+      justify-content:center;
+    }
+    &__btn{
+      align-items: center;
+      justify-content:center;
+    }
+  }
+  &__search-title{
+    &__text{
+      font-size: 32px;
+      color: #323232;
+    }
+  }
+  &__tags{
+    &__text{
+      font-size: 28px;
+      color:#A0A0A0;
+    }
+  }
+  &__history-list{
+    flex-direction: row;
+    justify-content:space-between;
+  }
+}

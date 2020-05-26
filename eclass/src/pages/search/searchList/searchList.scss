@@ -1,0 +1,25 @@
+@import '@/assets/styles/theme.scss';
+@import '@/assets/styles/animation.scss';
+
+.search-list{
+    width: 100%;
+}
+.search-list--fixed{
+    width: 100%;
+    position: absolute;
+    @include eject(position, fixed);
+}
+.search-list__header{
+    background: #F4F4F4;
+    width: 100%;
+    font-size: 30px;
+}
+.search-list__list{
+    &__title{
+        padding:5px;
+        // font-size:16px;
+        &__text{
+            font-size: 28px;
+        }
+    }
+}

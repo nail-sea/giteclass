@@ -1,0 +1,12 @@
+[
+  {
+    "source":"./Picker/time.js",
+    "package":"@tarojs/components-rn",
+    "target": "../components/Picker/time.js"
+  },
+  {
+    "source":"./Picker/date.js",
+    "package":"@tarojs/components-rn",
+    "target": "../components/Picker/date.js"
+  }
+]

@@ -1,0 +1,12 @@
+@import './index.scss';
+.stepper{
+  flex-direction: row;
+  &__minus{
+    border-radius: 27px;
+    border:0;
+  }
+  &__plus{
+    border-radius: 27px;
+    border: 0;
+  }
+}

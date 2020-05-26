@@ -1,0 +1,67 @@
+@import "@/assets/styles/theme.scss";
+
+.taro-scroll {
+  @include eject(-webkit-overflow-scrolling, touch);
+}
+.notice-view {
+  background: rgba(244, 244, 244, 1);
+  height: 100%;
+}
+.notice-wrap {
+  background: #fff;
+  display: flex;
+  height: 150px;
+  @include border(bottom, 1px, solid, rgba(0, 0, 0, 0.15));
+  padding: 0 30px;
+  &__img {
+    width: 84px;
+    height: 84px;
+    margin: 30px 0px;
+  }
+  &__view {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+    margin-left: 40px;
+    &__top {
+      margin-top: 33px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &__left {
+        font-size: 32px;
+        color: rgba(0, 0, 0, 0.85);
+      }
+      &__right {
+        font-size: 22px;
+        color: rgba(0, 0, 0, 0.25);
+      }
+    }
+    &__bottom {
+      font-size: 24px;
+      color: rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: space-between;
+      &__isread {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 28px;
+        background: rgba(255, 80, 0, 1);
+        border-radius: 18px;
+        font-size: 24px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        padding: 6px 8px;
+      }
+      &__text{
+        flex:1;
+        @include text-ellipsis();
+        width:400px;
+      }
+    }
+  }
+}

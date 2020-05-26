@@ -1,0 +1,100 @@
+@import "@/assets/styles/theme.scss";
+.house-list__item {
+  width: 100%;
+  padding: 30px;
+  @include border(bottom, 1px, solid, #eee);
+  position: relative;
+  &-flex {
+    display: flex;
+  }
+  &-header {
+    flex: 1;
+    &__label {
+      display: flex;
+      flex-direction: row;
+    }
+    &__types {
+      display: flex;
+      margin-top: 5px;
+      color: #fff;
+      align-items: center;
+      &__item1 {
+        margin-right: 5px;
+        padding: 0 4px;
+        background: #ffca56;
+        text-align: center;
+        font-size: 24px;
+        @include eject(line-height, normal);
+        border-radius: 4px;
+      }
+      &__item2 {
+        margin-right: 5px;
+        padding: 0 4px;
+        background: #ff8d8d;
+        text-align: center;
+        font-size: 24px;
+        @include eject(line-height, normal);
+        border-radius: 4px;
+      }
+      &__item3 {
+        margin-right: 5px;
+        padding: 0 6px;
+        background: #66a1fe;
+        text-align: center;
+        font-size: 24px;
+        @include eject(line-height, normal);
+        border-radius: 4px;
+      }
+    }
+    &__tags {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      &__item {
+        background: rgba(241, 241, 241, 1);
+        border-radius: 4px;
+        font-weight: 400;
+        color: rgba(160, 160, 160, 1);
+        line-height: 34px;
+        font-size: 22px;
+        margin-right: 12px;
+        padding: 0 7px;
+        @include eject(display, inline-block);
+      }
+    }
+    &__name {
+      font-size: 28px;
+      color: #424242;
+      // padding-left: 20px;
+      @include eject(line-height, 1.2);
+      &__text{
+        @include lamp-clamp(1)
+      }
+    }
+  }
+  &-content {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+    @include eject(line-height, 1.4);
+    font-size: 28px;
+    justify-content: space-between;
+    &__salary {
+      color: $basics-color-font;
+      min-width: 60px;
+    }
+  }
+  &-imglist {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__img {
+      width: 270px;
+      height: 170px;
+      border-radius: 9px;
+      overflow: hidden;
+    }
+  }
+}

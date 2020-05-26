@@ -1,0 +1,42 @@
+@import "@/assets/styles/theme.scss";
+.home-scroll{
+  position: relative;
+  display: flex;
+  flex-direction:column;
+  &__container{
+    @include eject(display,block);
+    height:100%;
+    width:100%;
+    z-index: 0;
+    // background-color:#FF7B49;
+    // background-color: #f4f4f4;
+  }
+  &__inner{
+    // flex:1
+    height:100%;
+    z-index: 0;
+    // padding-bottom: 100px;
+    // height:50%;
+    // @include eject(display,block);
+  }
+  &__hide-header{
+    position:absolute;
+    @include eject(position, fixed);
+    top:0;
+    left:0;
+    width:100%;
+    background-color:#FF7B49;
+    z-index: 100;
+    elevation:1;
+  }
+  &__tabbar{
+    width:100%;
+    left:0;
+    z-index: 100;
+    &--static{
+      @include eject(position,fixed);
+      top:100px;
+    }
+  }
+
+}

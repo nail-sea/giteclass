@@ -1,0 +1,31 @@
+@import './index.scss';
+.recharge-view{
+  height:100%;
+  background-color:#fff;
+  &__top{
+    &__title, &__number{
+      color:#333;
+    }
+  }
+  &__middle{
+    &__item{
+      justify-content:center;
+    }
+    &__item-active{
+      justify-content:center;
+    }
+    &__item-bg{
+      padding-right: 0;
+      align-items: center;
+      justify-content:center;
+      &__img{
+        width:81px;
+        height:40px;
+      }
+      &__text{
+        color:#fff;
+        text-align: center;
+      }
+    }
+  }
+}

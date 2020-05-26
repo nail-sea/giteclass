@@ -1,0 +1,24 @@
+@import "@/assets/styles/theme.scss";
+.nick-name{
+    width: 100%;
+    height: 100%;
+    background: #F4F4F4;
+    &__input{
+        font-size: 32px;
+        width: 100%;
+        height: 90px;
+        padding:0 32px;
+        background: #fff;
+    }
+    &__tips{
+        font-size:24px;
+        color: #A0A0A0;
+        padding:20px 32px;
+    }
+    &__btn{
+        padding:100px 70px 0;
+    }
+}
+
+
+

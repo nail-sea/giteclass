@@ -1,0 +1,185 @@
+@import "@/assets/styles/theme.scss";
+.p-l-10 {
+  padding-left: 10px;
+}
+.com-detail {
+  width: 100%;
+  padding: 0 28px 30px 28px;
+  background:#fff;
+  &__info {
+    padding-top: 10px;
+    &__titlename {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0 26px 0;
+      &__text{
+        padding-right: 20px;
+        width:560px;
+        font-size:36px;
+      }
+    }
+    &__tit {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px 0 0;
+      color: #323232;
+      &__t1 {
+        font-size: 30px;
+        margin-right: 20px;
+      }
+      &_t2 {
+        background: rgba(241, 241, 241, 1);
+        border-radius: 4px;
+        font-weight: 400;
+        color: rgba(160, 160, 160, 1);
+        font-size: 24px;
+        margin-right: 12px;
+        padding: 0 7px;
+        @include eject(display, inline-block);
+      }
+    }
+    &__content {
+      display: flex;
+      flex-direction: row;
+      &__img {
+        width: 84px;
+        height: 84px;
+        border-radius: 42px;
+        overflow: hidden;
+        margin-right: 20px;
+        &__img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__view{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left:50px;
+        height:24px;
+        @include eject(line-height, 2.4);
+      }
+      &__info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__t {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          @include eject(line-height, 1.4);
+          margin-right:22px;
+          &view{
+            margin-right:18px;
+          }
+          &1 {
+            font-size: 28px;
+          }
+          &2 {
+            font-size: 24px;
+            color: #a0a0a0;
+          }
+          &3 {
+            font-size: 24px;
+            color: #a0a0a0;
+            padding-right: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+          }
+          &4 {
+            margin-left:12px;
+            font-size: 24px;
+            color: #a0a0a0;
+          }
+        }
+      }
+      &__call {
+        display: flex;
+        color: #ff693e;
+        font-size: 32px;
+        align-items: center;
+        justify-content: center;
+      }
+      &__bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    &__connectname{
+      // padding-top: 10px;
+      &__text{
+        font-size: 28px;
+      }
+    }
+  }
+  &__secondtitle{
+    &__text{
+      line-height: 50px;
+      padding: 12px 0 20px;
+      font-size: 32px;
+      color: #424242;
+    }
+  }
+  &__describe_title__text{
+    font-size: 32px;
+    line-height: 50px;
+    padding: 12px 0 20px;
+    font-weight: bold;
+  }
+  &__describe {
+    font-size: 34px;
+    line-height: 50px;
+    padding: 12px 0 20px;
+    color:#686868;
+  }
+  &__advantage{
+    &__title1{
+      font-size: 32px;
+      font-weight: bold;
+      padding: 12px 28px 0;
+    }
+    &__list{
+      padding: 0 0 10px;
+      display:flex;
+      flex-direction: row;
+    }
+    &__list__text {
+      background: #FFE8DF;
+      border-radius: 8px;
+      font-weight: 400;
+      color: #F87C6A;
+      font-size: 28px;
+      margin-right: 30px;
+      padding: 6px 12px;
+      @include eject(display, inline-block);
+    }
+  }
+  &__img-list {
+    width: 100%;
+    // padding: 0 28px;
+    &__item {
+      width: 100%;
+      &__img {
+        width: 100%;
+        border-radius: 9px;
+      }
+    }
+  }
+}
+.main-list__item-header__titles__types__item1 {
+  &__text{
+    color: #ffffff;
+  }
+}
+.main-list__item-header__titles__types__item2 {
+  &__text{
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,36 @@
+@import "./index.scss";
+.personal-page {
+  &__header {
+    &__info {
+      flex-direction: row;
+    }
+    &__img {
+      overflow: hidden;
+      &__img {
+        border-radius: 61px;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    &__back {
+      justify-content: flex-start;
+      padding: 0;
+      height: 60px;
+      left: 20px;
+      &__text {
+        font-size: 24px;
+        color: #fff;
+      }
+    }
+    &__text {
+      &1,
+      &2 {
+        color: #fff;
+        font-size: 28px;
+      }
+      &1{
+          font-size: 40px;
+      }
+    }
+  }
+}

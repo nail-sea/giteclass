@@ -1,0 +1,94 @@
+@import "@/assets/styles/reset.scss";
+// @import "@/assets/styles/theme.scss";
+.detail-master {
+  background:#F4F4F4;
+  &__wrap {
+    margin-bottom:50px;
+    @include eject(-webkit-overflow-scrolling, touch);
+  }
+  &__recommend {
+    width: 100%;
+    background:#fff;
+    margin-top:22px;
+    padding: 0 32px;
+    &__title {
+      font-size: 32px;
+      padding: 20px 0;
+      color: #323232;
+      font-weight: bold;
+    }
+  }
+
+  &__share{
+    width:84px;
+    height:84px;
+    line-height: 70px;
+    position: absolute;
+    bottom:140px;
+    right:40px;
+    text-align: center;
+    @include eject(background-repeat, no-repeat);
+    @include eject (background-size, 100%);
+    &__text{
+      font-size:20px;
+      color:#fff;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include eject(position,fixed);
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height:130px;
+    padding: 0 28px;
+    background: #fff;
+    max-width: 750px;
+    @include eject(transform, translate(-50%, 0));
+    box-shadow:0px 2px 24px rgba(0,0,0,0.08);
+    @include eject(box-shadow, 0px 2px 24px 0px rgba(0,0,0,0.08));
+    &__share{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width:220px;
+      font-size:24px;
+      color:#424242;
+      background-color: #fff;
+    }
+    &__btn{
+      flex:1;
+    }
+  }
+  .list__bottom__loading {
+    padding-top:100px;
+    padding-bottom:160px;
+    background:#fff;
+  }
+  .mask_share{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right:70px;
+    padding-top:30px;
+    &__txt{
+      width:378px;
+      height:153px;
+      margin-top:142px;
+      margin-right:110px;
+    }
+    &__arrow{
+      width:164px;
+      height:245px;
+    }
+    &__btn{
+      margin-right:150px;
+      margin-top:77px;
+      width: 296px;
+      height:94px;
+    }
+  }
+}

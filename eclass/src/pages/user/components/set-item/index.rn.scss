@@ -1,0 +1,31 @@
+@import "./index.scss";
+.user-item {
+  &__img {
+    border-radius: 30px;
+    display: flex;
+  }
+  &__margin{
+      margin:0;
+  }
+  &__main {
+    &__tit {
+      &__text {
+        font-size: 32px;
+      }
+    }
+    &__tips {
+      &__text {
+        font-size: 24px;
+        color: #a0a0a0;
+      }
+    }
+  }
+  &__body {
+    &__content {
+      &__text {
+        color: #a0a0a0;
+        font-size: 28px;
+      }
+    }
+  }
+}

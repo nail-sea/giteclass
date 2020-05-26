@@ -1,0 +1,57 @@
+@import '@/assets/styles/reset.scss';
+@import '@/assets/styles/mixins.scss';
+.weui-tabbar{
+    @include eject(position, fixed);
+    @include eject(background-image,url('https://img.enetlife.cn/dist/production/assets/images/tab-bar/tabbar_bg.v100.png'));
+    @include eject(background-size, 100% 100%);
+    @include eject(background-position, bottom center);
+    bottom:0px;
+    left:0;
+    @include eject(left,50%);
+    z-index:50;
+    width: 100%;
+    max-width: 750px;
+    @include eject(transform, translate(-50%, 0));
+    height:156px;
+    @include eject(background-color,transparent !important);
+}
+.weui-tabbar:before{
+    border-top:none !important;
+}
+.weui-tabbar__item{
+    padding-top:56px !important;
+}
+.weui-tabbar__icon{
+    width:68px !important;
+    height:68px !important;
+}
+.weui-tabbar__label{
+    @include eject(line-height,1 !important);
+}
+.weui-tabbar__item:nth-of-type(3){
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weui-tabbar__item:nth-of-type(3) img{
+    position: absolute;
+    top:-20px;
+    left:50%;
+    margin-left:-42px;
+    width:84px !important; 
+    height:84px  !important;
+    border-radius:50%;
+}
+
+.weui-tabbar__item:nth-of-type(3) .weui-tabbar__label{
+    position: absolute;
+    bottom:8px;
+}
+
+.weui-badge{
+    top:3px !important;
+    right: -8px !important;
+    @include eject(background-color,#FF5000 !important); 
+}

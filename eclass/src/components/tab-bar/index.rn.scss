@@ -1,0 +1,22 @@
+@import './index.scss';
+.tab-bar-default{
+    &__item{
+        align-items: center;
+        
+        &__text{
+            font-size: 28px;
+            color:#999;
+        }
+        &--active{
+            &__text{
+                color:#424242;
+                font-size: 28px;
+            }
+        }
+    }
+    &--fixed{
+        flex: 1;
+        position: relative;;
+        z-index: 100;
+    }
+}

@@ -1,0 +1,89 @@
+@import '@/assets/styles/theme.scss';
+.dq-button{
+  display:flex;
+  flex-direction: column;
+  @include eject(user-select,none);
+  
+  &__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    @include eject(box-sizing, border-box);
+    &--active{
+      opacity:.6;
+    }
+    &--primary{
+      background-color: $btn-primary-color;
+      &--disabled{
+        background-color:#FFE8DF;
+      }
+    }
+    &--cancel{
+      border:2px solid $btn-primary-color;
+      background-color: #fff;
+      &--disabled {
+        border:2px solid #c8c8c8;
+      }
+    }
+    &--ghost{
+      background-color:transparent;
+      &--disabled {
+        background-color:transparent;
+      }
+    }
+    &--normal{
+      border-radius: 8px;
+      padding:10px 30px;
+      @include eject(padding, 16px 30px);
+    }
+    &--large{
+      border-radius: 9px;
+      // width:686px;
+      width:100%;
+      height:92px;
+    }
+    /* 相关UI图未找到 */
+    &--small{
+      border-radius: 6px;
+      padding:6px 12px;
+      @include eject(padding, 8px 12px);
+    }
+  }
+  &__text{
+    text-align-vertical: center;
+    text-align: center;
+    @include eject(line-height,1);
+    &--primary{
+      color:#fff;
+      &--disabled{
+        color:$btn-primary-color;
+      }
+    }
+    &--cancel{
+      color:$btn-primary-color;
+      &--disabled {
+        color:#c8c8c8;
+      }
+    }
+    &--ghost{
+      color:$btn-primary-color;
+      &--disabled {
+        color:#c8c8c8;
+      }
+    }
+    &--normal{
+      font-size: $font-default-size;
+      font-weight: 400;
+    }
+    &--large{
+      font-size: $font-best-size;
+      font-weight: 500;
+    }
+    &--small{
+      font-size:$font-small-size;
+      font-weight: 200;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@import './login-register.scss';
+.login-register{
+    flex: 1;
+    background-color: #fff;
+    &__con{
+        &__word1{
+            flex-direction: row;
+            justify-content:flex-end;
+            &__text{
+                font-size: 30px;
+                color:#333;
+            }
+        }
+        &__word2{
+            &__text{
+                font-size: 44px;
+                color:$basics-color-font;
+            }
+        }
+        &__word3{
+            &__text{
+                font-size: 28px;
+            }
+        }
+        &__word4{
+            &__text{
+                font-size: 32px;
+            }
+        }
+        &__clause{
+            align-items: center;
+        }
+    }
+}

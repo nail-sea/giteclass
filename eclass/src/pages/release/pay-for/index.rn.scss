@@ -1,0 +1,104 @@
+@import './index.scss';
+.pay-wrap{
+  &__view{
+    &__head{
+      &__view{
+        &__top{
+          flex-direction: row;
+          &__text{
+            font-size: 24px;
+            color:#a0a0a0;
+          }
+        }
+      }
+    }
+    &__top{
+      &__view{
+        &__text{
+         font-size: 36px; 
+         color:rgba(66,66,66,1);
+        }
+        &__tips{
+          flex-direction: row;
+        }
+        &__t{
+          font-size: 20px;
+          color:#c8c8c8;
+        }
+        &__circle{
+          text-align: center;
+        }
+      }
+    }
+    &__center{
+      &__view{
+        &__title{
+          &__text{
+            font-size:32px;
+            color:rgba(66,66,66,1);
+          }
+        }
+      }
+      &__view-top{
+        // flex-direction: row;
+        margin:10px 0;
+        &__text-box, &__text-box1{
+          flex-direction: row;
+          align-items: center;
+        }
+      }
+    }
+    &__bottom{
+      &__view{
+        &__title{
+          &__right{
+            font-size: 32px;
+
+          }
+          &__text{
+            font-size: 32px;
+            color:rgba(66,66,66,1);
+          }
+        }
+        &__view{
+          flex-direction: row;
+          &__left, &__right{
+            color:#a0a0a0;
+            font-size:28px;
+          }
+        }
+        &__pay{
+          &__view{
+            flex-direction: row;
+            align-items: center;
+            height:95px;
+            &__text{
+              font-size: 28px;
+            }
+            &__view-box{
+            flex-direction: row;
+          }
+          }
+        }
+      }
+    }
+  }
+}
+.money-wrap{
+  &__center{
+    &__view{
+      &__text{
+        font-size: 28px;
+        color:#424242;
+      }
+    }
+  }
+  &__bottom{
+    &__view{
+      &__text{
+        font-size: 28px;
+        color:#424242;
+      }
+    }
+  }
+}

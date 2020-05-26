@@ -1,0 +1,36 @@
+@import './index.scss';
+.service-wrap{
+    &__view{
+        &__bg{
+            top:0;
+            left:0;
+        }
+        &__title{
+            margin-top:100px;
+            &__text{
+                color:#686868;
+            }
+        }
+        &__word{
+            margin-top: 50px;
+            margin-bottom:100px;
+            line-height: 44px;
+        }
+        &__link{
+            &__titlt{
+                margin-top: 20px;
+                height:40px;
+                align-items:center;
+            }
+        }
+        &__mini{
+            &__text{
+                margin-top: 40px;
+                color:#686868;
+            }
+            &__tips{
+                margin-top: 24px;
+            }
+        }
+    }
+}
