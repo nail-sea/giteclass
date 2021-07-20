@@ -53,7 +53,7 @@
     "nerv-devtools": "^1.5.0",
     "nervjs": "^1.5.6",
     "react": "16.8.0",
-    "react-native": "0.59.9",
+    "react-native": "0.62.3",
     "react-native-amap-geolocation": "^1.0.4",
     "react-native-canvas": "^0.1.32",
     "react-native-code-push": "5.6.1",
