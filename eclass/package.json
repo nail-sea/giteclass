@@ -57,7 +57,7 @@
 		"nerv-devtools": "^1.5.6",
 		"nervjs": "^1.5.6",
 		"react": "16.8.0",
-		"react-native": "0.59.9",
+		"react-native": "0.62.3",
 		"react-native-amap-geolocation": "^1.0.4",
 		"react-native-qrcode": "^0.2.7",
 		"react-native-splash-screen": "^3.2.0",
